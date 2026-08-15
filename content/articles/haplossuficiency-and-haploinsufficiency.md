@@ -16,14 +16,14 @@ Researchers classify a gene as haplosufficient (HS) or haploinsufficient (HI) af
 ## Haplosufficiency
 Haplosufficiency characterizes most genes in a diploid organism. In the organs where a HS gene works (brain, heart, etc.), it does not matter whether both [alleles](http://prado-cabrero.com/difference-between-gene-and-allele/) of the gene or only one of them is healthy and active (Fig 1). As you can see in Fig. 1, for HS genes the range of permissiveness in terms of required work is very loose, as 50% of work is still ok.
 
-![Gene A as an example of a haplosufficient gene active in brain, heart and liver](/images/fig-1.webp)
+![Gene A as an example of a haplosufficient gene active in brain, heart and liver](/images/example-of-a-haplosufficient-gene.webp)
 
 **Figure 1. Gene *A* as an example of a haplosufficient gene (HS). This gene is active in brain, heart and liver.** **(A)** A person with alleles *A\*1* and *A\*2*, both working correctly. In all organs where it is active, the minimum work required for this gene is 50 (arbitrary units), symbolised by the black triangles. As both alleles are healthy, their cumulative work is 100 (arbitrary units). Therefore, the work required of this gene is fulfilled in all the organs where it is active (organs filled in green). **(B)** In this person, one of the alleles does not work (allele *A\*3*). Still, the work performed by the gene accounts for 50 arbitrary units (from allele *A\*1*), which is the minimum rewuired for this gene for the correct functioning of all organs where it works (organs still filled in green).
 
 ## Haploinsufficiency
 Haploinsufficiency characterizes a minority of genes in a diploid organism. What makes a gene HI is a tissue that needs this gene working beyond the activity of a single healthy allele. Therefore, the gene cannot meet the demands of this tissue if one of the alleles is damaged. This leads to a disease related to said gene in that tissue (Fig. 2).
 
-![Gene B as an example of a haploinsufficient gene active in lungs, stomach and small intestine](/images/fig-2.webp)
+![Gene B as an example of a haploinsufficient gene active in lungs, stomach and small intestine](/images/example-of-a-haploinsufficient-gene.webp)
 
 **Figure 2. Gene *B* as an example of a haploinsufficient (HI)** **gene. This gene is active in lungs, stomach and small intestine.** **(A)** A person with the alleles *B\*1* and *B\*2*, both operating properly. Therefore, the work performed by the products of these alleles exceeds the minimum work required for normal function in all the organs where it is active. **(B)** A person with the alleles *B\*1* and *B\*3*, where *B\*3* is not active due to a mutation. As a result, the total activity of the gene in this person is produced only by the healthy allele. As the minimum work required for the gene *B* is 70 arbitrary units in the small intestine, its function is insufficient in this organ, causing a disease.
 
