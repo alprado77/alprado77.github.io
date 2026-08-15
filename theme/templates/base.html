@@ -1,0 +1,92 @@
+{# ============================================================
+   base.html — the shared skeleton for EVERY page on the site.
+
+   Anything that appears on all pages lives here: the <head>,
+   the masthead with nav, the social icons, and the footer.
+   Other templates "extend" this file and fill in the
+   {% block content %} hole in the middle.
+
+   Change the nav here once, and it changes on every page.
+   ============================================================ #}
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {# Each child template supplies its own title and description #}
+  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ SITEDESCRIPTION }}{% endblock %}">
+  <link rel="canonical" href="{% block canonical %}{{ SITEURL }}/{% endblock %}">
+
+  {# Open Graph tags — these control how a link looks when shared
+     on LinkedIn, Bluesky, etc. WordPress generated these invisibly;
+     here they are explicit and under your control. #}
+  <meta property="og:site_name" content="{{ SITENAME }}">
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ SITEDESCRIPTION }}{% endblock %}">
+  {% block og_image %}{% endblock %}
+
+  <link rel="alternate" type="application/rss+xml" title="{{ SITENAME }}" href="{{ SITEURL }}/feeds/all.rss.xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  {# The CSS now lives in its own file. One stylesheet, every page.
+     Edit it once and the whole site changes. #}
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="{{ SITEURL }}/" class="logo">
+      <img src="{{ SITEURL }}/images/logo.png" alt="Alfonso Prado-Cabrero logo">
+    </a>
+    {# The nav is built from MENUITEMS in pelicanconf.py —
+       add a link there and it appears on every page. #}
+    <nav aria-label="Primary">
+      <ul>
+        {% for name, link in MENUITEMS %}
+        <li><a href="{{ SITEURL }}{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="social-row">
+    {% for name, link, icon in SOCIAL %}
+    <a href="{{ link }}" title="{{ name }}">
+      <img src="{{ SITEURL }}/images/{{ icon }}" alt="{{ name }}">
+    </a>
+    {% endfor %}
+  </div>
+</header>
+
+<main>
+  {# ---- This is where each page's own content gets inserted ---- #}
+  {% block content %}{% endblock %}
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <ul>
+        {% for name, link in FOOTER_LINKS %}
+        <li><a href="{{ SITEURL }}{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <address>
+      Alfonso Prado-Cabrero, PhD<br>
+      Senior research fellow<br>
+      Nutrition Research Centre Ireland (NRCI)<br>
+      South East Technological University<br>
+      Waterford, Ireland
+    </address>
+  </div>
+</footer>
+
+</body>
+</html>

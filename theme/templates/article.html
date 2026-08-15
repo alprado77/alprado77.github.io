@@ -1,0 +1,85 @@
+{# ============================================================
+   article.html — the template for a single blog post.
+
+   It "extends" base.html, so it inherits the head, masthead,
+   nav and footer automatically. It only defines what is
+   specific to an article.
+
+   Everything written as {{ article.something }} is pulled from
+   the Markdown file: either from its metadata header
+   (Title:, Kicker:, Image:) or from the body text.
+   ============================================================ #}
+{% extends "base.html" %}
+
+{# --- Fill in the <head> blocks that base.html left open --- #}
+{% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
+{% block description %}{{ article.summary|striptags|truncate(160) }}{% endblock %}
+{% block canonical %}{{ SITEURL }}/{{ article.url }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_title %}{{ article.title|striptags }}{% endblock %}
+{% block og_description %}{{ article.summary|striptags|truncate(160) }}{% endblock %}
+{% block og_image %}{% if article.image %}<meta property="og:image" content="{{ SITEURL }}/images/{{ article.image }}">{% endif %}{% endblock %}
+
+{% block content %}
+<article class="wrap">
+
+  {# --- Title block --- #}
+  <div class="article-head">
+    {% if article.kicker %}<p class="kicker">{{ article.kicker }}</p>{% endif %}
+    <h1>{{ article.title }}</h1>
+    {% if article.dek %}<p class="dek">{{ article.dek }}</p>{% endif %}
+    <p class="byline">By {{ article.author }}</p>
+  </div>
+
+  {# --- Hero image, only rendered if the Markdown file defines one --- #}
+  {% if article.image %}
+  <figure class="hero">
+    <img src="{{ SITEURL }}/images/{{ article.image }}" alt="{{ article.image_alt|default('') }}">
+    {% if article.image_credit %}
+    <figcaption>{{ article.image_credit }}</figcaption>
+    {% endif %}
+  </figure>
+  {% endif %}
+
+  {# --- The lipid divider: a straight line that bends into a wave,
+         echoing the saturated/unsaturated explanation. Decorative
+         only, so aria-hidden keeps it out of screen readers. --- #}
+  <div class="lipid-divider" aria-hidden="true">
+    <svg viewBox="0 0 240 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,12 L100,12 C110,12 115,2 125,2 C135,2 140,22 150,22 C160,22 165,2 175,2 C185,2 190,22 200,22 C210,22 215,12 225,12 L240,12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  {# --- THE ARTICLE BODY.
+         Everything you write in Markdown lands here, already
+         converted to HTML. Your headings become <h2>, your lists
+         become <ul>/<ol>, and the CSS styles them automatically. --- #}
+  <div class="article-body">
+    {{ article.content }}
+  </div>
+
+  <div class="lipid-divider" aria-hidden="true">
+    <svg viewBox="0 0 240 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,12 L100,12 C110,12 115,2 125,2 C135,2 140,22 150,22 C160,22 165,2 175,2 C185,2 190,22 200,22 C210,22 215,12 225,12 L240,12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  {# --- Licence note. Set LICENSE_* in pelicanconf.py --- #}
+  <div class="license-note">
+    <img src="{{ SITEURL }}/images/cc-badge.png" alt="Creative Commons Attribution-NonCommercial 4.0 licence badge">
+    <p>This content is licensed under a <a href="{{ LICENSE_URL }}">{{ LICENSE_NAME }}</a>.</p>
+  </div>
+
+  {# --- Author card. Values come from pelicanconf.py, so editing
+         your bio in one place updates every article. --- #}
+  <aside class="author-card">
+    <img src="{{ SITEURL }}/images/author.webp" alt="{{ AUTHOR }}">
+    <div>
+      <p class="author-name">{{ AUTHOR }}</p>
+      <p>{{ AUTHOR_BIO }}</p>
+      <a href="{{ AUTHOR_LINK }}">Follow on LinkedIn</a>
+    </div>
+  </aside>
+
+</article>
+{% endblock %}

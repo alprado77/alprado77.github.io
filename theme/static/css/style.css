@@ -1,0 +1,442 @@
+/* ============================================================
+   style.css — the ENTIRE visual design of the site, in one file.
+
+   This is the payoff of the template system: change a value
+   here and every page updates. Nothing else needs touching.
+   ============================================================ */
+
+/* --- Design tokens ---
+   Named values reused everywhere below via var(--name).
+   Change a colour here, it changes site-wide. */
+:root{
+  --paper: #FFFFFF;        /* page background, warm off-white */
+  --sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --paper-raised: #F5F5F5; /* callout box background */
+  --ink: #1C2321;          /* main text, near-black */
+  --ink-soft: #55605C;     /* captions, bylines, secondary text */
+  --gold: #A8792C;         /* accent: labels, hover, ref numbers */
+  --gold-soft: #C9A876;    /* lighter accent: dividers */
+  --teal: #1F5C57;         /* links */
+  --rule: #DDD6C6;         /* thin divider lines */
+  --max: 700px;            /* readable column width */
+}
+
+/* Makes padding count inside an element's width. Set once, globally. */
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior: smooth; }
+
+body{
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a{ color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover{ color: var(--gold); }
+/* Visible outline when tabbing with a keyboard — accessibility */
+a:focus-visible, button:focus-visible{ outline: 2px solid var(--gold); outline-offset: 3px; }
+
+img{ max-width: 100%; display: block; }
+
+h1, h2{ font-family: "Fraunces", Georgia, serif; color: var(--ink); }
+
+/* The reusable container: centres content, caps line length */
+.wrap{ max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
+
+/* ---------- Masthead ---------- */
+
+.masthead{
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.masthead-inner{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo img{ height: 42px; width: auto; }
+
+.masthead nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.masthead nav a{ color: var(--ink-soft); text-decoration: none; }
+.masthead nav a:hover{ color: var(--gold); }
+
+.social-row{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1.5rem 0.85rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.9rem;
+}
+
+.social-row a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px; height: 22px;
+  opacity: 0.65;
+}
+.social-row a:hover{ opacity: 1; }
+.social-row img{ width: 18px; height: 18px; object-fit: contain; filter: grayscale(1); }
+.social-row a:hover img{ filter: grayscale(0); }
+
+/* ---------- Home page: article cards ---------- */
+
+.home{ padding-top: 1rem; }
+
+.post-card{
+  padding-bottom: 2.75rem;
+  margin-bottom: 2.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+.post-card:last-of-type{ border-bottom: none; }
+
+.post-card-link{ text-decoration: none; display: block; }
+
+.post-card-image{
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  margin-bottom: 1.1rem;
+  /* Slight lift on hover — the only motion on the site */
+  transition: opacity 0.2s ease;
+}
+.post-card-link:hover .post-card-image{ opacity: 0.9; }
+
+.post-card-title{
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+  color: var(--ink);
+}
+.post-card-link:hover .post-card-title{ color: var(--teal); }
+
+.post-card-dek{
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  padding-top: 1.5rem;
+}
+
+/* ---------- Lipid divider (the signature motif) ---------- */
+
+.lipid-divider{
+  display: flex;
+  justify-content: center;
+  margin: 2.75rem 0;
+  color: var(--gold-soft); /* the SVG inherits this via currentColor */
+}
+.lipid-divider svg{ width: 150px; height: 16px; }
+
+.rule{ border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+/* ---------- Article head ---------- */
+
+main{ padding: 3rem 0 2rem; }
+
+.kicker{
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.9rem;
+}
+
+/* clamp(min, preferred, max) scales the heading smoothly
+   between phone and desktop instead of jumping */
+h1{
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 1.1rem;
+}
+
+.dek{ /* journalism term for the subtitle under a headline */
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin: 0 0 1.4rem;
+}
+
+.byline{
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+/* ---------- Hero image ---------- */
+
+figure.hero{ margin: 2.25rem 0 0; }
+figure.hero img{ width: 100%; height: auto; border-radius: 2px; }
+figure.hero figcaption{
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 0.6rem;
+}
+figure.hero figcaption a{ font-style: normal; }
+
+/* ---------- Article body ----------
+   These rules style whatever Markdown produces. You write
+   "## Introduction" and it lands here as a styled <h2>.
+   You never write HTML by hand again. */
+
+.article-body h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 2.5rem 0 1.1rem;
+}
+
+.article-body h3{
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0 0.9rem;
+}
+
+.article-body p{ margin: 0 0 1.25rem; }
+
+.article-body ul, .article-body ol{ margin: 0 0 1.25rem; padding-left: 1.5rem; }
+.article-body li{ margin-bottom: 0.5rem; }
+
+/* Images inside articles — including your animated GIFs.
+   Just write ![caption](image.gif) in Markdown. */
+.article-body p:has(img){ margin: 2rem 0 0.4rem; }
+
+.article-body img{
+  width: 80%;
+  height: auto;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-body p:has(img) + p{
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--ink-soft);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Blockquote in Markdown ("> text") becomes the callout box */
+.article-body blockquote{
+  background: var(--paper-raised);
+  border-left: 3px solid var(--gold-soft);
+  padding: 1.1rem 1.3rem;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin: 1.5rem 0;
+}
+.article-body blockquote p:last-child{ margin-bottom: 0; }
+
+.article-body blockquote.book-quote{
+  background: none;
+  border-left: none;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 1.8rem 0;
+  margin: 2.5rem 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.article-body blockquote.book-quote p{
+  margin: 0 0 0.6rem;
+}
+
+.article-body blockquote.book-quote cite{
+  display: block;
+  margin-top: 1.2rem;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+}
+
+/* ---------- References ----------
+   Write a normal numbered list in Markdown under a
+   "## References" heading, wrapped as shown in the sample
+   article, and the [1] [2] [3] markers appear automatically. */
+
+.references{ margin-top: 1rem; }
+.references h2{ margin-bottom: 1.6rem; }
+
+.references ol{
+  list-style: none;      /* we generate our own [n] markers */
+  counter-reset: ref;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+/* padding-left + negative text-indent = a hanging indent,
+   like a real academic bibliography */
+.references li{
+  counter-increment: ref;
+  padding-left: 2.2rem;
+  text-indent: -2.2rem;
+  margin-bottom: 0.95rem;
+}
+
+/* ::before inserts the [1], [2]... generated from the counter */
+.references li::before{
+  content: "[" counter(ref) "]";
+  display: inline-block;
+  width: 2.2rem;
+  text-indent: 0;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.references a{ color: var(--teal); }
+
+/* ---------- Licence note ---------- */
+
+.license-note{
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 2.5rem 0 0;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+.license-note img{ height: 32px; width: auto; flex-shrink: 0; }
+
+/* ---------- Author card ---------- */
+
+.author-card{
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-top: 3rem;
+  padding-top: 2.25rem;
+  border-top: 1px solid var(--rule);
+}
+.author-card img{
+  width: 84px; height: 84px;
+  border-radius: 50%;   /* square photo -> circle */
+  object-fit: cover;    /* crop to fill without stretching */
+  flex-shrink: 0;
+}
+.author-card .author-name{
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+}
+.author-card p{ font-size: 0.95rem; color: var(--ink-soft); margin: 0 0 0.6rem; }
+.author-card a{
+  font-family: "Inter", sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+  background: var(--ink);
+  color: var(--paper);
+  margin-top: 4rem;
+  padding: 2.75rem 0;
+}
+footer .wrap{ display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; }
+footer nav ul{
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+}
+footer nav a{ color: var(--paper); opacity: 0.85; text-decoration: none; }
+footer nav a:hover{ opacity: 1; color: var(--gold-soft); }
+
+footer address{
+  font-style: normal;  /* browsers italicise <address> by default */
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--paper);
+  opacity: 0.9;
+}
+
+/* ---------- Responsive ----------
+   @media applies rules only below a given screen width.
+   This is what adapts the layout to phones. */
+
+@media (max-width: 560px){
+  body{ font-size: 1.05rem; }
+  .post-card-title{ font-size: 1.35rem; }
+  .author-card{ flex-direction: column; align-items: center; text-align: center; }
+  footer .wrap{ flex-direction: column; }
+}
+
+/* Respect users who have asked their OS to reduce motion */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  .post-card-image{ transition: none; }
+}
+
+.wrap.home { max-width: 1000px; }
+
+/* Home page: two-column grid of article cards, one column on phones */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .post-grid { grid-template-columns: 1fr; }
+}

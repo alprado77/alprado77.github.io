@@ -1,0 +1,21 @@
+{# sitemap.xml — generated automatically from your articles and
+   pages. No plugin needed. Submit https://prado-cabrero.com/sitemap.xml
+   to Google Search Console once. #}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ SITEURL }}/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  {% for article in articles %}
+  <url>
+    <loc>{{ SITEURL }}/{{ article.url }}</loc>
+    <lastmod>{{ article.date.strftime('%Y-%m-%d') }}</lastmod>
+  </url>
+  {% endfor %}
+  {% for page in pages %}
+  <url>
+    <loc>{{ SITEURL }}/{{ page.url }}</loc>
+  </url>
+  {% endfor %}
+</urlset>

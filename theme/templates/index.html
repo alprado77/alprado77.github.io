@@ -1,0 +1,54 @@
+{# ============================================================
+   index.html — your home page.
+
+   This is the template that makes an SSG worth using: it builds
+   the list of articles automatically. Write a new Markdown file
+   and it appears here on the next build. You never edit this
+   file to publish a post.
+   ============================================================ #}
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }}{% endblock %}
+{% block description %}{{ SITEDESCRIPTION }}{% endblock %}
+{% block canonical %}{{ SITEURL }}/{% endblock %}
+{% block og_title %}{{ SITENAME }}{% endblock %}
+
+{% block content %}
+<div class="wrap home">
+
+  {# articles_page.object_list is the list of your posts,
+     newest first. The loop below renders one card per post. #}
+  <div class="post-grid">
+  {% for article in articles_page.object_list if not article.lang_es %}
+  <article class="post-card">
+    <a class="post-card-link" href="{{ SITEURL }}/{{ article.url }}">
+      {% if article.card_image or article.image %}
+      <img class="post-card-image"
+           src="{{ SITEURL }}/images/{{ article.card_image|default(article.image) }}"
+           alt="{{ article.title|striptags }}"
+           loading="lazy">
+      {% endif %}
+      <h2 class="post-card-title">{{ article.title }}</h2>
+    </a>
+    {% if article.dek %}
+    <p class="post-card-dek">{{ article.dek }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+  </div>
+
+  {# Pagination links, shown only once you have more posts than
+     DEFAULT_PAGINATION allows on one page. #}
+  {% if articles_page.has_other_pages() %}
+  <nav class="pagination" aria-label="Pagination">
+    {% if articles_page.has_previous() %}
+      <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&larr; Newer</a>
+    {% endif %}
+    {% if articles_page.has_next() %}
+      <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Older &rarr;</a>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+</div>
+{% endblock %}

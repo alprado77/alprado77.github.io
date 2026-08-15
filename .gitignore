@@ -1,0 +1,10 @@
+output/
+__pycache__/
+*.pyc
+.venv/
+venv/
+cache/
+.DS_Store
+content/articles/*.pdf
+*_tmp.html
+content-backup/

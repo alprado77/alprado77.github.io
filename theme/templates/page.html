@@ -1,0 +1,23 @@
+{# ============================================================
+   page.html — for standalone pages (About, Projects, Hobbies,
+   Publications). Same as an article, minus the byline, hero
+   and author card.
+   ============================================================ #}
+{% extends "base.html" %}
+
+{% block title %}{{ page.title|striptags }} | {{ SITENAME }}{% endblock %}
+{% block canonical %}{{ SITEURL }}/{{ page.url }}{% endblock %}
+{% block og_title %}{{ page.title|striptags }}{% endblock %}
+
+{% block content %}
+<article class="wrap">
+  <div class="article-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.dek %}<p class="dek">{{ page.dek }}</p>{% endif %}
+  </div>
+  <hr class="rule">
+  <div class="article-body">
+    {{ page.content }}
+  </div>
+</article>
+{% endblock %}
