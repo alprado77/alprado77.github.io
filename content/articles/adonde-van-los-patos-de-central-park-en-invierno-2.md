@@ -3,10 +3,10 @@ Date: 2025-11-05 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: adonde-van-los-patos-de-central-park-en-invierno-2
 Kicker: Ensayo
-Image: patos.webp
-Image_alt: Ducks picture. Jeswin Thomas
-Card_image: patos.webp
-Image_credit: Foto: Jeswin Thomas
+Image: worried-girl-manga-style.webp
+Image_alt: worried-girl-manga-style
+Card_image: worried-girl-manga-style.webp
+Image_credit: Illustración: Adriana Prado-Ahicart
 Dek: En este mini ensayo propongo una nueva aplicación para el principio de precaución y describo como esto puede ayudar a disipar ciertos sesgos cognitivos sobre el cambio climático.
 Lang_es: yes
 

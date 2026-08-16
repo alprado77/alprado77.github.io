@@ -3,10 +3,10 @@ Date: 2025-11-05 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: where-do-the-ducks-in-central-park-go-in-winter
 Kicker: Reasoning — Essay
-Image: patos.webp
-Card_image: patos.webp
-Image_alt: Ducks picture. By Jeswin Thomas
-Image_credit: Photo: Jeswin Thomas
+Image: worried-girl-manga-style.webp
+Card_image: worried-girl-manga-style.webp
+Image_alt: worried-girl-manga-style
+Image_credit: Illustration: Adriana Prado-Ahicart
 Dek: In this brief essay I propose a new application of the precautionary principle and describe how it can help overcome certain cognitive biases about climate change.
 
 Read this story in [Spanish](/adonde-van-los-patos-de-central-park-en-invierno-2/)

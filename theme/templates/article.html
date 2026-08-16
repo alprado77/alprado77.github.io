@@ -36,7 +36,7 @@
   <figure class="hero">
     <img src="{{ SITEURL }}/images/{{ article.image }}" alt="{{ article.image_alt|default('') }}">
     {% if article.image_credit %}
-    <figcaption>{{ article.image_credit }}</figcaption>
+    <figcaption>{{ article.image_credit|safe }}</figcaption>
     {% endif %}
   </figure>
   {% endif %}

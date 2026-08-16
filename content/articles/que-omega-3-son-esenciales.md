@@ -3,9 +3,9 @@ Date: 2025-05-20 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: que-omega-3-son-esenciales
 Kicker: Nutrición
-Image: seeds.webp
-Card_image: seeds.webp
-Image_credit: Photo by [Karyna Panchenko](https://unsplash.com/@karyna_panchenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText). Flaxseed
+Image: rapeseed.webp
+Card_image: rapeseed.webp
+Image_credit: Foto: <a href="https://pixabay.com/users/szjeno09190-702158/">Jenő Szabó</a>. Flores de colza.
 Dek: Esta pequeña historia explica cómo los científicos descubrieron que el ácido linoleico y el ácido alfa-linolénico son esenciales para los humanos, es decir, que necesitamos ingerirlos para poder producir ARA, EPA y DHA.
 Lang_es: yes
 

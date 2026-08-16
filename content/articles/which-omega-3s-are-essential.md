@@ -3,9 +3,9 @@ Date: 2025-10-25 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: which-omega-3s-are-essential
 Kicker: Essential Fatty Acids — Explainer
-Image: seeds.webp
-Card_image: seeds.webp
-Image_credit: Photo by [Karyna Panchenko](https://unsplash.com/@karyna_panchenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText). Flaxseed
+Image: rapeseed.webp
+Card_image: rapeseed.webp
+Image_credit: Photo by <a href="https://pixabay.com/users/szjeno09190-702158/">Jenő Szabó</a>. Rapeseed field.
 Dek: This short story explains how scientists discovered that linoleic acid and alpha-linoleic acid are essential for humans, meaning that we need to ingest them to be able to produce ARA, EPA and DHA.
 
 Lee este artículo en [español](/que-omega-3-son-esenciales/)
@@ -82,7 +82,7 @@ The two essential fatty acids are present in flaxseed, chia, canola or hemp oil,
 
 [Miles, F. L., Lloren, J. I. C., Haddad, E., Jaceldo-Siegl, K., Knutsen, S., Sabate, J., & Fraser, G. E. (2019). Plasma, Urine, and Adipose Tissue Biomarkers of Dietary Intake Differ Between Vegetarian and Non-Vegetarian Diet Groups in the Adventist Health Study-2. *The Journal of Nutrition, 149*(4), 667-675.](https://www.sciencedirect.com/science/article/pii/S0022316622165880?via%3Dihub)
 
-[Prado-Cabrero, A., & Nolan, J. M. (2021). Omega-3 nutraceuticals, climate change and threats to the environment: The cases of Antarctic krill and Calanus finmarchicus. *Ambio, 50*(6), 1184-1199.](file:///C:/Users/Alfonso/Downloads/s13280-020-01472-z-1.pdf)
+[Prado-Cabrero, A., & Nolan, J. M. (2021). Omega-3 nutraceuticals, climate change and threats to the environment: The cases of Antarctic krill and Calanus finmarchicus. *Ambio, 50*(6), 1184-1199.](https://link.springer.com/article/10.1007/s13280-020-01472-z)
 
 [Rapoport, S. I., Ramadan, E., & Basselin, M. (2011). Docosahexaenoic acid (DHA) incorporation into the brain from plasma, as an in vivo biomarker of brain DHA metabolism and neurotransmission. *Prostaglandins Other Lipid Mediat, 96*(1-4), 109-113.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3202024/)
 
