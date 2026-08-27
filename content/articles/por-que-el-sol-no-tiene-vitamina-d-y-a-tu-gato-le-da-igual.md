@@ -3,8 +3,8 @@ Date: 2025-11-20 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: por-que-el-sol-no-tiene-vitamina-d-y-a-tu-gato-le-da-igual
 Kicker: Vitaminas
-Image: silly cats cartoon.webp
-Card_image: silly cats cartoon.webp
+Image: silly-cats-cartoon.webp
+Card_image: silly-cats-cartoon.webp
 Image_credit: Ilustrción: Adriana Prado-Ahicart
 Dek: Esta pequeña historia cuenta cómo se relacionan realmente la vitamina D y el sol. Además, cuenta como afecta esto a tu mascota.
 Lang_es: yes

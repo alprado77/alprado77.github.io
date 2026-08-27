@@ -1,4 +1,4 @@
-Title: ¿Adónde van los patos de Central Park en invierno?: Sobre el arte de ponerse el cinturón de seguridad
+Title: El principio de precaución y el cambio climático
 Date: 2025-11-05 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: adonde-van-los-patos-de-central-park-en-invierno-2

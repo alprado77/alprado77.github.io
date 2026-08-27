@@ -3,8 +3,8 @@ Date: 2025-11-20 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: why-the-sun-doesnt-have-vitamin-d-and-your-cat-couldnt-care-less
 Kicker: Vitamins — Explainer
-Image: silly cats cartoon.webp
-Card_image: silly cats cartoon.webp
+Image: silly-cats-cartoon.webp
+Card_image: silly-cats-cartoon.webp
 Image_credit: Illustration: Adriana Prado-Ahicart
 Dek: This short story explain what is really going on about vitamin D and the sun. As a bonus, tells you a little bit how your pet deals with this stuff.
 

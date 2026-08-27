@@ -1,4 +1,4 @@
-Title: Gene and allele: how to tell the difference
+Title: Gene vs allele: what's the difference?
 Date: 2025-05-15 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: gene-and-allele-how-to-tell-the-difference
@@ -6,7 +6,7 @@ Kicker: Genetics — Explainer
 Image: baby-chromosomes.jpg
 Card_image: baby-chromosomes.jpg
 Image_credit: Baby girl with a subset of chromosomes
-Dek: These two concepts are often confounded. Learning what is a gene and what is an allele you will get ready to the next step: understanding what is [haplosufficiency](http://prado-cabrero.com/haplosuficiency-and-haploinsufficiency/).
+Dek: These two concepts are often confounded. Learning what is a gene and what is an allele you will get ready to the next step: understanding what is haplosufficiency.
 
 
 ## Our genetic information is in duplicate

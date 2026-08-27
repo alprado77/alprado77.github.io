@@ -1,4 +1,4 @@
-Title: ¿Qué omega-3 son esenciales?
+Title: ¿Qué omega-3 son esenciales? LA, ALA, EPA y DHA explicados
 Date: 2025-05-20 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: que-omega-3-son-esenciales

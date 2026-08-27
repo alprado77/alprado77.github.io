@@ -1,4 +1,4 @@
-Title: Where do the ducks in central park go in winter
+Title: The precautionary principle and climate change — or, where do the ducks go in winter?
 Date: 2025-11-05 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: where-do-the-ducks-in-central-park-go-in-winter

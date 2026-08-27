@@ -1,10 +1,10 @@
-Title: A different way to explain the structure of DNA
+Title: DNA structure explained visually: nucleotides and the double helix
 Date: 2025-05-20 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: a-different-way-to-explain-the-structure-of-dna
 Kicker: Molecular Biology — Explainer
-Image: dna model close view.webp
-Card_image: dna model close view.webp
+Image: dna-model-close-view.webp
+Card_image: dna-model-close-view.webp
 Image_credit: Double strand of DNA (dsDNA)
 Dek: Here you will get into a visual trip to the structure of the molecule of life. We leave atomic details apart, and focus on the shape of the building blocks of DNA, deoxinucleotides, and how they bind to make up the famous double helix.
 

@@ -1,4 +1,4 @@
-Title: Gen y alelo: como diferenciarlos
+Title: Gen y alelo: ¿cuál es la diferencia?
 Date: 2025-05-15 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: gen-y-alelo-como-diferenciarlos

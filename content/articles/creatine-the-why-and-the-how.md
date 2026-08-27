@@ -1,10 +1,10 @@
-Title: Creatine: The why and the how
+Title: Does creatine give you energy? What it actually does in your muscles
 Date: 2025-12-10 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: creatine-the-why-and-the-how
 Kicker: Metabolism — Explainer
-Image: atp and phosphocreatine molecular model.webp
-Card_image: atp and phosphocreatine molecular model.webp
+Image: atp-and-phosphocreatine-molecular-model.webp
+Card_image: atp-and-phosphocreatine-molecular-model.webp
 Image_credit: Creatine monohydrate from a commercial dietary supplement
 Dek: Is creatine a source of energy? No. Instead, it is a taxi for energy. Here’s how and why creatine drives energy from production site to where it is used.
 

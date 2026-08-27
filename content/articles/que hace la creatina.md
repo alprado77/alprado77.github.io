@@ -1,10 +1,10 @@
-Title: ¿Qué hace la creatina?
+Title: ¿La creatina da energía? Lo que hace realmente en tus músculos
 Date: 2026-08-15
 Author: Alfonso Prado-Cabrero, PhD
 Slug: que-hace-la-creatina
 Kicker: Metabolismo
-Image: atp and phosphocreatine molecular model.webp
-Card_image: atp and phosphocreatine molecular model.webp
+Image: atp-and-phosphocreatine-molecular-model.webp
+Card_image: atp-and-phosphocreatine-molecular-model.webp
 Image_credit: Modelo de la estructura del ATP (izquierda) y la fosfocreatine (derecha). Fosfatos en rojo.
 Dek: ¿Es la creatina una fuente de energía? No. Es, más bien, un taxi para la energía. Aquí te explico cómo y por qué la creatina lleva la energía desde donde se produce hasta donde se usa.
 Lang_es: yes

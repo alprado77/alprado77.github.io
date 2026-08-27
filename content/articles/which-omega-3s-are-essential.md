@@ -1,11 +1,11 @@
-Title: Which omega-3s are essential
+Title: Which omega-3s are essential? LA, ALA, EPA and DHA explained
 Date: 2025-10-25 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: which-omega-3s-are-essential
 Kicker: Essential Fatty Acids — Explainer
 Image: rapeseed.webp
 Card_image: rapeseed.webp
-Image_credit: Photo by <a href="https://pixabay.com/users/szjeno09190-702158/">Jenő Szabó</a>. Rapeseed field.
+Image_credit: Photo by <a href="https://pixabay.com/users/szjeno09190-702158/">Jenő Szabó</a>. Rapeseed flowers.
 Dek: This short story explains how scientists discovered that linoleic acid and alpha-linoleic acid are essential for humans, meaning that we need to ingest them to be able to produce ARA, EPA and DHA.
 
 Lee este artículo en [español](/que-omega-3-son-esenciales/)

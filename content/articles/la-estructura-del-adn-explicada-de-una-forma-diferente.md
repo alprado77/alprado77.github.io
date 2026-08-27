@@ -1,10 +1,10 @@
-Title: La estructura del ADN explicada de una forma diferente
+Title: La estructura del ADN explicada visualmente: nucleótidos y doble hélice
 Date: 2025-05-20 10:00
 Author: Alfonso Prado-Cabrero, PhD
 Slug: la-estructura-del-adn-explicada-de-una-forma-diferente
 Kicker: Biologia Molecular
-Image: dna model close view.webp
-Card_image: dna model close view.webp
+Image: dna-model-close-view.webp
+Card_image: dna-model-close-view.webp
 Image_credit: Doble cadena de ADN
 Dek: Vamos a emprender un viaje visual a la estructura de la cadena de la vida. En este rato vamos a dejar de lado detalles químicos, y vamos a concentrarnos en las formas de las moléculas para familiarizarnos con el ADN de forma intuitiva.
 Lang_es: yes
