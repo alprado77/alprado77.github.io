@@ -41,7 +41,7 @@ In this scenario, when one of the two alleles of *GLUT2* is impaired, the remain
 
 ## Haploinsufficiency
 
-Only around 5 % of our genes are estimated to be haploinsufficient (see below). What makes a gene haploinsufficient is a tissue that needs this gene working beyond the activity of a single healthy allele. Therefore, if one of the alleles is damaged, the gene cannot meet the demands of this tissue. This leads to a disease related to said gene in that tissue (Fig. 2).
+Only around 5 % of our genes are estimated to be haploinsufficient (see below). What makes a gene haploinsufficient in a tissue is a volume of work higher than the work provided by only one of the two alleles. Therefore, if one of the alleles is damaged, the gene cannot meet the demand of this tissue. This leads to a disease caused by that gene, which is malfunctioning in that tissue (Fig. 2).
 
 ![Gene B as an example of a haploinsufficient gene active in lungs, stomach and small intestine](/images/example-of-a-haploinsufficient-gene.webp)
 
@@ -49,13 +49,17 @@ Only around 5 % of our genes are estimated to be haploinsufficient (see below). 
 
 ## Haploinsufficiency and partial loss of function
 
-Total loss of activity of an allele is unusual to happen. Instead, milder mutations, provoking partial loss of function in the allele are more frequent, since these are less lethal and therefore are more likely transmitted to offspring.
+Total loss of activity of an allele is unusual to be seen. Instead, milder mutations, provoking partial loss of function in the allele are more frequently seen. The reason for this is that being less lethal, there are more chances that the person bearing the allele survives long enough to have children, thus creating a chance for the mildly defective allele to be transmitted to their offspring. People with a totally defective allele rarely survive long enough to reproduce.
 
-Therefore, haploinsufficiency normally happens with just a subtle decrease in the activity of an allele in a tissue where near maximum capacity of work of that gene is required. We will see an example of this in the next section.
+Therefore, haploinsufficiency normally happens with just a subtle decrease in the activity of an allele in a tissue where near maximum capacity of work of that gene is required.
+
+## The inheritance pattern of diseases caused by haploinsufficient genes is dominant
+
+From the above, it follows that for an haploinsufficient gene, a significant loss of activity in one allele causes disease. Therefore, diseases caused by haploinsufficient genes follow a dominant inheritance pattern. In fact, mutations in haploinsufficient genes are the main cause of dominant diseases. This means that if you inherit a partially defective allele of a haploinsufficient gene, it doesn't matter that your other allele of the gene is healthy, you will still get the disease.
 
 ## An example of haplosufficient gene: *GLUT1*
 
-The glucose transporter GLUT1 (Fig. 3) is key in the transport of glucose from the bloodstream to the brain, where it is used to fuel cognitive function [(Harik et al., 1988)](https://onlinelibrary.wiley.com/doi/full/10.1046/j.1471-4159.1999.0720238.x?sid=nlm%3Apubmed). It is well documented that a drop in the supply of glucose to the brain may lead to the development of GLUT1 deficiency syndrome [(Harik et al., 1990)](https://www.ncbi.nlm.nih.gov/pubmed/?term=Immunocytochemical+localization+of+the+erythroid+glucose+transporter%3A+abundance+in+tissues+with+barrier+functions). The most common symptoms of this syndrome, in different degrees of severity, are neurodevelopmental delay, epileptic encephalopathy, acquired microcephaly, ataxia, dystonia and spasticity [(De Vivo et al., 1991)](https://www.ncbi.nlm.nih.gov/pubmed/?term=Defective+glucose+transport+across+the+blood-brain+barrier+as+a+cause+of+persistent+hypoglycorrhachia%2C+seizures%2C+and+developmental+delay).
+The glucose transporter GLUT1 (Fig. 3) is located in the brain, where it is the main mediator of glucose intake to fuel our cognitive function [(Harik et al., 1988)](https://onlinelibrary.wiley.com/doi/full/10.1046/j.1471-4159.1999.0720238.x?sid=nlm%3Apubmed). It is well documented that a drop in the supply of glucose to the brain may lead to the development of GLUT1 deficiency syndrome [(Harik et al., 1990)](https://www.ncbi.nlm.nih.gov/pubmed/?term=Immunocytochemical+localization+of+the+erythroid+glucose+transporter%3A+abundance+in+tissues+with+barrier+functions). The most common symptoms of this syndrome, in different degrees of severity, are neurodevelopmental delay, epileptic encephalopathy, acquired microcephaly, ataxia, dystonia and spasticity [(De Vivo et al., 1991)](https://www.ncbi.nlm.nih.gov/pubmed/?term=Defective+glucose+transport+across+the+blood-brain+barrier+as+a+cause+of+persistent+hypoglycorrhachia%2C+seizures%2C+and+developmental+delay).
 
 ![Human GLUT1 glucose transporter protein](/images/glut1-gif.gif)
 
@@ -68,11 +72,6 @@ Red blood cells (erythrocytes) also use the GLUT1 protein. Nevertheless, these c
 ![Glucose and vitamin C molecules compared](/images/glucose-and-vitmin-c.gif)
 
 **Figure 4. Glucose (left) and Vitamin C (Right)**
-
-
-## The inheritance pattern of diseases caused by Haploinsufficient genes is dominant
-
-From the above, it follows that for an HI gene, a significant loss of activity in one allele causes disease. Therefore, diseases caused by HI genes follow a dominant inheritance pattern. In fact, mutations in HI genes are the main cause of dominant diseases.
 
 ## How many haploinsufficient genes there are in the human genome?
 
