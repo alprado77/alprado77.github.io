@@ -8,6 +8,8 @@ Card_image: happloinsufficiency.webp
 Image_credit: illustration of the works of a haploinsufficient gene
 Dek: Most genes work fine with only one healthy allele. A minority of genes don't, with one healthy allele not providing sufficient function. What haploinsufficiency means and why it matters.
 
+Lee este artículo en [español](/haplosuficiencia-y-haploinsuficiencia/)
+
 ## Introduction
 
 If you know what a gene and an allele of a gene are, you are good to continue reading. If you need a brief refresher, take a look at the article [gene and allele, how to tell the difference](/gene-and-allele-how-to-tell-the-difference/) and come back.
@@ -43,7 +45,7 @@ Only around 5 % of our genes are estimated to be haploinsufficient (see below). 
 
 ![Gene B as an example of a haploinsufficient gene active in lungs, stomach and small intestine](/images/example-of-a-haploinsufficient-gene.webp)
 
-**Figure 2. Gene *B* as an example of a haploinsufficient (HI)** **gene. This gene is active in lungs, stomach and small intestine.** **(A)** A person with the alleles *B\*1* and *B\*2*, both operating properly. Therefore, the work performed by the products of these alleles exceeds the minimum work required for normal function in all the organs where it is active. **(B)** A person with the alleles *B\*1* and *B\*3*, where *B\*3* is not active due to a mutation. As a result, the total activity of the gene in this person is produced only by the healthy allele. As the minimum work required for the gene *B* is 70 arbitrary units in the small intestine, its function is insufficient in this organ, causing a disease.
+**Figure 2. Gene *B* as an example of a haploinsufficient (HI) gene. This gene is active in lungs, stomach and small intestine. (A)** A person with the alleles *B\*1* and *B\*2*, both operating properly. Therefore, the work performed by the products of these alleles exceeds the minimum work required for normal function in all the organs where it is active. **(B)** A person with the alleles *B\*1* and *B\*3*, where *B\*3* is not active due to a mutation. As a result, the total activity of the gene in this person is produced only by the healthy allele. As the minimum work required for the gene *B* is 70 arbitrary units in the small intestine, its function is insufficient in this organ, causing a disease.
 
 ## The inheritance pattern of diseases caused by haploinsufficient genes is dominant
 
@@ -78,15 +80,15 @@ Red blood cells (erythrocytes) also use the *GLUT1* protein. In fact, each red b
 
 ## How many haploinsufficient genes there are in the human genome?
 
-The quick answer to this question is that it is currently unknown how many HI genes exist in the human genome. Nevertheless, continuous research is making advancement in this field. In 2008, the group of M. A. Ragan collected in a review article the 299 genes for which there was evidence to classify them as HI [(Dang et al., 2008)](https://www.nature.com/articles/ejhg2008111).
+The quick answer to this question is that it is currently unknown how many haploinsufficient genes exist in the human genome. Nevertheless, continuous research is making advancement in this field. In 2008, the group of M. A. Ragan collected in a review article the 299 genes for which there was evidence to classify them as haploinsufficient [(Dang et al., 2008)](https://www.nature.com/articles/ejhg2008111).
 
-In 2010, the group of M. E. Hurles [(Huang et al., 2010)](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001154) developed a bioinformatics tool with the characteristics of the 301 HI genes and the 1076 HS genes that were already known at that time. Next, they analyzed 12,443 well-known genes of the human genome not yet classified as either HS or HI.
+In 2010, the group of M. E. Hurles [(Huang et al., 2010)](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001154) developed a bioinformatics tool with the characteristics of the 301 haploinsufficient genes and the 1076 HS genes that were already known at that time. Next, they analyzed 12,443 well-known genes of the human genome not yet classified as either haplosufficient or haploinsufficient.
 
-As a result, they assigned a probability of belonging to one or the other group. If we assume that the genes with a 90% probability of being HI in this study are definitely HI genes, then approximately 600 of the 12,443 genes investigated would fall into this category. Extrapolating this information to the 19,000–20,000 genes of the human genome, then approximately 950 genes would probably be HI. This accounts for about 5% of the total genes of our genome.
+As a result, they assigned a probability of belonging to one or the other group. If we assume that the genes with a 90% probability of being haploinsufficient in this study are definitely haploinsufficient genes, then approximately 600 of the 12,443 genes investigated would fall into this category. Extrapolating this information to the 19,000–20,000 genes of the human genome, then approximately 950 genes would probably be HI. This accounts for about 5% of the total genes of our genome.
 
-Recently, the way to answer this question has been reframed. Rather than sorting genes into two boxes, large population-sequencing projects [Lek et al., 2016](https://www.nature.com/articles/nature19057), [Karczewski et al., 2020](https://www.nature.com/articles/s41586-020-2308-7) suggest placing every gene on a continuous scale. These researchers looked at hundreds of thousands of healthy people and asked, for each gene, how often a broken allele turns up. Genes where broken elelles are almost never seen are genes evolution has been protecting.
+Recently, the way to answer this question has been reframed. Rather than sorting genes into two boxes, large population-sequencing projects [Lek et al., 2016](https://www.nature.com/articles/nature19057), [Karczewski et al., 2020](https://www.nature.com/articles/s41586-020-2308-7) suggest placing every gene on a continuous scale. These researchers looked at hundreds of thousands of healthy people and asked, for each gene, how often a broken allele turns up. Genes where broken alelles are almost never seen are genes evolution has been protecting.
 
-If we look at BRCA1, one of the best-known cancer-causing genes, this method finds no trace of evolutionary protection at all. This is not because losing one allele of BRCA1 is harmless, but because the damage usually appears after the age of having children, and evolution cannot act on what comes too late: That allele has already been passed on to the next generation.
+But if we look at BRCA1, one of the best-known cancer-causing genes, this method finds no trace of evolutionary protection at all. This is not because losing one allele of BRCA1 is harmless, but because the damage usually appears after the age of having children, and evolution cannot act on what comes too late: That allele has already been passed on to the next generation.
 
 Which brings us back to where we started. Whether a gene is haplosufficient or haploinsufficient is not a property you can read off the gene itself. GLUT1 is good enough in the red blood cell and merciless in the brain. GLUT2 is dispensable enough in the gut and indispensable in liver and kidney. The answer always depends on which tissue you ask, how much work it demands, and, as BRCA1 reminds us, when in life you ask the question.
 
