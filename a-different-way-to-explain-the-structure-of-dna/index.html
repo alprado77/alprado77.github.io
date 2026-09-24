@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>DNA structure explained visually: nucleotides and the double helix | Alfonso Prado-Cabrero</title>
-  <meta name="description" content="function styleDNA(viewer, group, color) { viewer.setStyle({resn: group, elem: "P"}, {sphere: {color: color, radius: 0.45}, stick: {radius: 0.15, color:...">
+  <meta name="description" content="Lee este artículo en español function styleDNA(viewer, group, color) { viewer.setStyle({resn: group, elem: "P"}, {sphere: {color: color, radius: 0.45,...">
   <link rel="canonical" href="https://prado-cabrero.com/a-different-way-to-explain-the-structure-of-dna/">
 
   <meta property="og:site_name" content="Alfonso Prado-Cabrero">
   <meta property="og:type" content="article">
   <meta property="og:title" content="DNA structure explained visually: nucleotides and the double helix">
-  <meta property="og:description" content="function styleDNA(viewer, group, color) { viewer.setStyle({resn: group, elem: "P"}, {sphere: {color: color, radius: 0.45}, stick: {radius: 0.15, color:...">
+  <meta property="og:description" content="Lee este artículo en español function styleDNA(viewer, group, color) { viewer.setStyle({resn: group, elem: "P"}, {sphere: {color: color, radius: 0.45,...">
 <meta property="og:image" content="https://prado-cabrero.com/images/dna-model-close-view.webp">
   <link rel="alternate" type="application/rss+xml" title="Alfonso Prado-Cabrero" href="https://prado-cabrero.com/feeds/all.rss.xml">
 
@@ -71,19 +71,20 @@
   </div>
 
   <div class="article-body">
-    <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+    <p>Lee este artículo en <a href="/la-estructura-del-adn-explicada-de-una-forma-diferente/">español</a></p>
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
 <script>
 function styleDNA(viewer, group, color) {
   viewer.setStyle({resn: group, elem: "P"},
-    {sphere: {color: color, radius: 0.45}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.45, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "O"},
-    {sphere: {color: color, radius: 0.30}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.30, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "C"},
-    {sphere: {color: color, radius: 0.35}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.35, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "N"},
-    {sphere: {color: color, radius: 0.38}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.38, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "H"},
-    {sphere: {color: color, radius: 0.20}, stick: {radius: 0.10, color: color}});
+    {sphere: {color: color, radius: 0.20, quality: "0"}, stick: {radius: 0.10, color: color}});
 }
 
 function showHBonds(viewer) {
@@ -128,7 +129,6 @@ function showMolecule(divId, file, groups, options) {
   var spinAxis = options.spinAxis || "z";
   var spinSpeed = options.spinSpeed !== undefined ? options.spinSpeed : -2.0;
   var fog      = options.fog !== undefined ? options.fog : true;
-  var outline  = options.outline  || 0.02;
   var zoom = options.zoom || 1;
   var hbonds = options.hbonds || [];
 
@@ -143,8 +143,11 @@ function showMolecule(divId, file, groups, options) {
     })
     .then(function(data) {
       var viewer = $3Dmol.createViewer(divId, {backgroundColor: "white"});
-      if (fog) viewer.enableFog(true);
-      viewer.setViewStyle({style: "outline", color: "black", width: outline});
+
+      //viewer.setSphereQuality("low");     // <-- add
+      // viewer.setStickQuality("low");      // <-- add (if supported in your version)
+
+      if (fog) viewer.enableFog(false);
 
       viewer.addModel(data, "pdb", {keepH: true});
 
@@ -208,7 +211,7 @@ showMolecule("mol1", "/images/molecules/adenylate-h.pdb", [
   {group: "PHO", color: "yellow"},
   {group: "SUG", color: "#87AF50"},
   {group: "BAS", color: "#00bfff"}
-], {rotateX: 90, rotateY: 0, outline: 0.04, zoom: 1, spinAxis: [0, 0, 1]});
+], {rotateX: 90, rotateY: 0, zoom: 1, spinAxis: [0, 0, 1]});
 </script>
 
 <p><strong>Figure 1.</strong> <strong>dAMP</strong> (<strong>d</strong>eoxy<strong>A</strong>denosine <strong>M</strong>ono<strong>P</strong>hosphate) represented as ball (atoms) and sticks (bonds between atoms).</p>
@@ -220,7 +223,7 @@ showMolecule("mol2", "/images/molecules/tri-adenylate-h.pdb", [
   {group: "PHO", color: "yellow"},
   {group: "SUG", color: "#87AF50"},
   {group: "BAS", color: "#00bfff"}
-], {rotateX: 90, rotateY: 0, outline: 0.04, zoom: 1});
+], {rotateX: 90, rotateY: 0, zoom: 1});
 </script>
 
 <p><strong>Figure 2. Three dAMPs in a row.</strong></p>
@@ -233,7 +236,7 @@ showMolecule("mol3", "/images/molecules/aaa-ttt-h.pdb", [
   {group: "SUG", color: "#87AF50"},
   {group: "ADE", color: "#00bfff"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 90, outline: 0.04, zoom: 1.6, hbonds: [
+], {rotateX: 90, zoom: 1.6, hbonds: [
   [18, 179], [17, 181],   // A1 ··· T3
   [51, 147], [50, 149],   // A2 ··· T2
   [83, 114], [82, 116]    // A3 ··· T1
@@ -252,7 +255,7 @@ showMolecule("mol4", "/images/molecules/at-pair-h.pdb", [
   {group: "SUG", color: "#87AF50"},
   {group: "ADE", color: "#00bfff"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 0, rotateY: 0, rotateZ: -90, zoom: 1.6, outline: 0.04, spinSpeed: 0, hbonds: [[18, 49], [17, 51]]});
+], {rotateX: 0, rotateY: 0, rotateZ: -90, zoom: 1.6, spinSpeed: 0, hbonds: [[18, 49], [17, 51]]});
 </script>
 
 <p><strong>Figure 4. dATP and dTTP pair.</strong></p>
@@ -265,7 +268,7 @@ showMolecule("mol5", "/images/molecules/cg-pair-h.pdb", [
   {group: "SUG", color: "#87AF50"},
   {group: "GUA", color: "#0000FF"},
   {group: "CYT", color: "#FF6933"}
-], {rotateX: 0, rotateY: 0,  rotateZ: -90, zoom: 1.6,  outline: 0.04, spinSpeed: 0, hbonds: [
+], {rotateX: 0, rotateY: 0,  rotateZ: -90, zoom: 1.6,  spinSpeed: 0, hbonds: [
   [17, 52],   // G O6  ··· C N4
   [18, 50],   // G N1  ··· C N3
   [20, 49]    // G N2  ··· C O2
@@ -284,7 +287,7 @@ showMolecule("mol6", "/images/molecules/acgtggatca-ss-h.pdb", [
   {group: "CYT", color: "#FF6933"},
   {group: "GUA", color: "#0000FF"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 90, zoom: 1.1});
+], {rotateX: 90, zoom: 1.1, spinSpeed: 0});
 </script>
 
 <p><strong>Figure 5. Single strand of DNA (ssDNA)</strong></p>
@@ -298,7 +301,7 @@ showMolecule("mol7", "/images/molecules/acgtggatca-ds-h.pdb", [
   {group: "CYT", color: "#FF6933"},
   {group: "GUA", color: "#0000FF"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 90, zoom: 1, hbonds: [[18, 622], [17, 624], [50, 591], [48, 592], [47, 594], [80, 561], [81, 559], [83, 558], [111, 530], [113, 529], [145, 499], [146, 497], [148, 496], [178, 469], [179, 467], [181, 466], [212, 435], [211, 437], [241, 406], [243, 405], [275, 372], [273, 373], [272, 375], [306, 337], [305, 339]]});
+], {rotateX: 90, zoom: 1, spinSpeed: 0, hbonds: [[18, 622], [17, 624], [50, 591], [48, 592], [47, 594], [80, 561], [81, 559], [83, 558], [111, 530], [113, 529], [145, 499], [146, 497], [148, 496], [178, 469], [179, 467], [181, 466], [212, 435], [211, 437], [241, 406], [243, 405], [275, 372], [273, 373], [272, 375], [306, 337], [305, 339]]});
 </script>
 
 <p><strong>Figure 6. Double strand of DNA (dsDNA)</strong></p>

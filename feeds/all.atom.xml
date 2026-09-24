@@ -157,27 +157,27 @@ Nosotros, los humanos, podemos utilizar ambos tipos de vitamina D (animal y fún
 &lt;p&gt;&lt;a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3202024/"&gt;Rapoport, S. I., Ramadan, E., &amp;amp; Basselin, M. (2011). Docosahexaenoic acid (DHA) incorporation into the brain from plasma, as an in vivo biomarker of brain DHA metabolism and neurotransmission. &lt;em&gt;Prostaglandins Other Lipid Mediat, 96&lt;/em&gt;(1-4), 109-113.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://journals.lww.com/co-clinicalnutrition/fulltext/2023/05000/heterogeneity_in_the_response_to_n_3.14.aspx"&gt;Shaikh, S. R., &amp;amp; Bazinet, R. P. (2023). Heterogeneity in the response to n-3 polyunsaturated fatty acids. &lt;em&gt;Current Opinion in Clinical Nutrition &amp;amp; Metabolic Care, 26&lt;/em&gt;(3).&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.mdpi.com/2072-6643/15/1/161"&gt;Sinclair, A. J., Wang, Y., &amp;amp; Li, D. (2022). What Is the Evidence for Dietary-Induced DHA Deficiency in Human Brains? &lt;em&gt;Nutrients, 15&lt;/em&gt;(1).&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.jlr.org/article/S0022-2275(20)35636-4/fulltext"&gt;Spector, A. A., &amp;amp; Kim, H.-Y. (2015). Discovery of essential fatty acids. &lt;em&gt;Journal of Lipid Research, 56&lt;/em&gt;(1), 11-21.&lt;/a&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>DNA structure explained visually: nucleotides and the double helix</title><link href="https://prado-cabrero.com/a-different-way-to-explain-the-structure-of-dna/" rel="alternate"/><published>2025-09-21T00:00:00+01:00</published><updated>2025-09-21T00:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-09-21:/a-different-way-to-explain-the-structure-of-dna/</id><summary type="html">&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
+&lt;p&gt;&lt;a href="https://www.jlr.org/article/S0022-2275(20)35636-4/fulltext"&gt;Spector, A. A., &amp;amp; Kim, H.-Y. (2015). Discovery of essential fatty acids. &lt;em&gt;Journal of Lipid Research, 56&lt;/em&gt;(1), 11-21.&lt;/a&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>DNA structure explained visually: nucleotides and the double helix</title><link href="https://prado-cabrero.com/a-different-way-to-explain-the-structure-of-dna/" rel="alternate"/><published>2025-09-21T00:00:00+01:00</published><updated>2025-09-21T00:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-09-21:/a-different-way-to-explain-the-structure-of-dna/</id><summary type="html">&lt;p&gt;Lee este artículo en &lt;a href="/la-estructura-del-adn-explicada-de-una-forma-diferente/"&gt;español&lt;/a&gt;&lt;/p&gt;
+&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 function styleDNA(viewer, group, color) {
   viewer.setStyle({resn: group, elem: "P"},
-    {sphere: {color: color, radius: 0.45}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.45, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "O"},
-    {sphere: {color: color, radius: 0.30}, stick: {radius: 0.15, color: color}});
-  viewer.setStyle({resn: group, elem: "C"},
-    {sphere: {color: color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
+    {sphere: {color: color, radius: 0.30, quality: "0"}, stick: {radius: 0.15, color: color …&lt;/script&gt;</summary><content type="html">&lt;p&gt;Lee este artículo en &lt;a href="/la-estructura-del-adn-explicada-de-una-forma-diferente/"&gt;español&lt;/a&gt;&lt;/p&gt;
+&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 function styleDNA(viewer, group, color) {
   viewer.setStyle({resn: group, elem: "P"},
-    {sphere: {color: color, radius: 0.45}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.45, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "O"},
-    {sphere: {color: color, radius: 0.30}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.30, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "C"},
-    {sphere: {color: color, radius: 0.35}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.35, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "N"},
-    {sphere: {color: color, radius: 0.38}, stick: {radius: 0.15, color: color}});
+    {sphere: {color: color, radius: 0.38, quality: "0"}, stick: {radius: 0.15, color: color}});
   viewer.setStyle({resn: group, elem: "H"},
-    {sphere: {color: color, radius: 0.20}, stick: {radius: 0.10, color: color}});
+    {sphere: {color: color, radius: 0.20, quality: "0"}, stick: {radius: 0.10, color: color}});
 }
 
 function showHBonds(viewer) {
@@ -222,7 +222,6 @@ function showMolecule(divId, file, groups, options) {
   var spinAxis = options.spinAxis || "z";
   var spinSpeed = options.spinSpeed !== undefined ? options.spinSpeed : -2.0;
   var fog      = options.fog !== undefined ? options.fog : true;
-  var outline  = options.outline  || 0.02;
   var zoom = options.zoom || 1;
   var hbonds = options.hbonds || [];
 
@@ -237,8 +236,11 @@ function showMolecule(divId, file, groups, options) {
     })
     .then(function(data) {
       var viewer = $3Dmol.createViewer(divId, {backgroundColor: "white"});
-      if (fog) viewer.enableFog(true);
-      viewer.setViewStyle({style: "outline", color: "black", width: outline});
+
+      //viewer.setSphereQuality("low");     // &lt;-- add
+      // viewer.setStickQuality("low");      // &lt;-- add (if supported in your version)
+
+      if (fog) viewer.enableFog(false);
 
       viewer.addModel(data, "pdb", {keepH: true});
 
@@ -302,7 +304,7 @@ showMolecule("mol1", "/images/molecules/adenylate-h.pdb", [
   {group: "PHO", color: "yellow"},
   {group: "SUG", color: "#87AF50"},
   {group: "BAS", color: "#00bfff"}
-], {rotateX: 90, rotateY: 0, outline: 0.04, zoom: 1, spinAxis: [0, 0, 1]});
+], {rotateX: 90, rotateY: 0, zoom: 1, spinAxis: [0, 0, 1]});
 &lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; &lt;strong&gt;dAMP&lt;/strong&gt; (&lt;strong&gt;d&lt;/strong&gt;eoxy&lt;strong&gt;A&lt;/strong&gt;denosine &lt;strong&gt;M&lt;/strong&gt;ono&lt;strong&gt;P&lt;/strong&gt;hosphate) represented as ball (atoms) and sticks (bonds between atoms).&lt;/p&gt;
@@ -314,7 +316,7 @@ showMolecule("mol2", "/images/molecules/tri-adenylate-h.pdb", [
   {group: "PHO", color: "yellow"},
   {group: "SUG", color: "#87AF50"},
   {group: "BAS", color: "#00bfff"}
-], {rotateX: 90, rotateY: 0, outline: 0.04, zoom: 1});
+], {rotateX: 90, rotateY: 0, zoom: 1});
 &lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;Figure 2. Three dAMPs in a row.&lt;/strong&gt;&lt;/p&gt;
@@ -327,7 +329,7 @@ showMolecule("mol3", "/images/molecules/aaa-ttt-h.pdb", [
   {group: "SUG", color: "#87AF50"},
   {group: "ADE", color: "#00bfff"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 90, outline: 0.04, zoom: 1.6, hbonds: [
+], {rotateX: 90, zoom: 1.6, hbonds: [
   [18, 179], [17, 181],   // A1 ··· T3
   [51, 147], [50, 149],   // A2 ··· T2
   [83, 114], [82, 116]    // A3 ··· T1
@@ -346,7 +348,7 @@ showMolecule("mol4", "/images/molecules/at-pair-h.pdb", [
   {group: "SUG", color: "#87AF50"},
   {group: "ADE", color: "#00bfff"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 0, rotateY: 0, rotateZ: -90, zoom: 1.6, outline: 0.04, spinSpeed: 0, hbonds: [[18, 49], [17, 51]]});
+], {rotateX: 0, rotateY: 0, rotateZ: -90, zoom: 1.6, spinSpeed: 0, hbonds: [[18, 49], [17, 51]]});
 &lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;Figure 4. dATP and dTTP pair.&lt;/strong&gt;&lt;/p&gt;
@@ -359,7 +361,7 @@ showMolecule("mol5", "/images/molecules/cg-pair-h.pdb", [
   {group: "SUG", color: "#87AF50"},
   {group: "GUA", color: "#0000FF"},
   {group: "CYT", color: "#FF6933"}
-], {rotateX: 0, rotateY: 0,  rotateZ: -90, zoom: 1.6,  outline: 0.04, spinSpeed: 0, hbonds: [
+], {rotateX: 0, rotateY: 0,  rotateZ: -90, zoom: 1.6,  spinSpeed: 0, hbonds: [
   [17, 52],   // G O6  ··· C N4
   [18, 50],   // G N1  ··· C N3
   [20, 49]    // G N2  ··· C O2
@@ -378,7 +380,7 @@ showMolecule("mol6", "/images/molecules/acgtggatca-ss-h.pdb", [
   {group: "CYT", color: "#FF6933"},
   {group: "GUA", color: "#0000FF"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 90, zoom: 1.1});
+], {rotateX: 90, zoom: 1.1, spinSpeed: 0});
 &lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;Figure 5. Single strand of DNA (ssDNA)&lt;/strong&gt;&lt;/p&gt;
@@ -392,48 +394,250 @@ showMolecule("mol7", "/images/molecules/acgtggatca-ds-h.pdb", [
   {group: "CYT", color: "#FF6933"},
   {group: "GUA", color: "#0000FF"},
   {group: "THY", color: "#CC3333"}
-], {rotateX: 90, zoom: 1, hbonds: [[18, 622], [17, 624], [50, 591], [48, 592], [47, 594], [80, 561], [81, 559], [83, 558], [111, 530], [113, 529], [145, 499], [146, 497], [148, 496], [178, 469], [179, 467], [181, 466], [212, 435], [211, 437], [241, 406], [243, 405], [275, 372], [273, 373], [272, 375], [306, 337], [305, 339]]});
+], {rotateX: 90, zoom: 1, spinSpeed: 0, hbonds: [[18, 622], [17, 624], [50, 591], [48, 592], [47, 594], [80, 561], [81, 559], [83, 558], [111, 530], [113, 529], [145, 499], [146, 497], [148, 496], [178, 469], [179, 467], [181, 466], [212, 435], [211, 437], [241, 406], [243, 405], [275, 372], [273, 373], [272, 375], [306, 337], [305, 339]]});
 &lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;Figure 6. Double strand of DNA (dsDNA)&lt;/strong&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>La estructura del ADN explicada visualmente: nucleótidos y doble hélice</title><link href="https://prado-cabrero.com/la-estructura-del-adn-explicada-de-una-forma-diferente/" rel="alternate"/><published>2025-05-20T10:00:00+01:00</published><updated>2025-05-20T10:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-05-20:/la-estructura-del-adn-explicada-de-una-forma-diferente/</id><summary type="html">&lt;p&gt;Read this post in &lt;a href="/a-different-way-to-explain-the-structure-of-dna/"&gt;English&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Introduccion&lt;/h2&gt;
-&lt;p&gt;El ADN está compuesto de desoxirribonucleótidos. Estas moléculas con un nombre tan complicado son los ladrillos del ADN, y comprender su forma y como se unen entre ellos es la puerta de entrada a la genetica. En contraste con las explicaciones clásicas, creo que …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Read this post in &lt;a href="/a-different-way-to-explain-the-structure-of-dna/"&gt;English&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Introduccion&lt;/h2&gt;
-&lt;p&gt;El ADN está compuesto de desoxirribonucleótidos. Estas moléculas con un nombre tan complicado son los ladrillos del ADN, y comprender su forma y como se unen entre ellos es la puerta de entrada a la genetica. En contraste con las explicaciones clásicas, creo que minimizar los detalles químicos y proporcionar numerosas ayudas visuales es la mejor forma de entender el ADN. Así, en este post hablo mínimamente de átomos y utilizo numerosas animaciones en 3D. Las animaciones pueden tardar un poco en cargar en tu dispositivo, pero confio en que te serán de gran ayuda.&lt;/p&gt;
-&lt;h2&gt;La estructura de los desoxirribonucleótidos&lt;/h2&gt;
-&lt;p&gt;Estructuralmente, podemos comparar el ADN con una escalera de caracol, donde cada desoxirribonucleótido forma parte de un segmento de la barandilla y de medio escalón. En los siguientes párrafos iras entendiendo esta analogía.&lt;/p&gt;
-&lt;p&gt;La Figura 1 muestra la desoxiadenosina monofosfato (deoxyadenosine monophosphate, dAMP), uno de los cuatro desoxirribonucleótidos que forman el ADN. Cada bola representa un átomo, cuya identidad no necesitamos conocer ahora. Solo necesitas saber que cada desoxirribonucleótido se compone de tres grupos de átomos: para empezar, los átomos verdes forman el grupo llamado 5-desoxirribosa, y los átomos naranjas forman el grupo llamado fosfato. Ambos grupos son iguales en todos los desoxirribonucleotidos, y ambos forman parte de la “barandilla” de la escalera de caracol. Los átomos azules, por su parte, forman el grupo llamado base nitrogenada. La base nitrogenada es distinta en cada desoxirribonucleotido, y constituye medio escalón de la escalera. En nuestro ejemplo, la base nitrogenada es la Adenosina.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="dAMP ball and stick model" src="/images/damp-1.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figura 1.&lt;/strong&gt; &lt;strong&gt;dAMP&lt;/strong&gt; (&lt;strong&gt;d&lt;/strong&gt;eoxy&lt;strong&gt;A&lt;/strong&gt;denosine &lt;strong&gt;M&lt;/strong&gt;ono&lt;strong&gt;P&lt;/strong&gt;hosphate) representad comobolas (átomos) y barras (enlaces entre los átomos).&lt;/p&gt;
-&lt;h2&gt;Así es como los desoxirribonucleótidos se unen entre ellos&lt;/h2&gt;
-&lt;p&gt;Ahora vamos a unir tres dAMPs (Fig. 2). Juntos forman una hebra simple de ADN, y esto ya va tomando forma de “escalera de caracol”. El patrón de colores, que es el mismo que en la Fig. 1, muestra como los átomos verdes y naranjas (desoxirribosa y fosfato) forman parte de la “barandilla”, y las bases nitrogenadas forman medios escalones. Aquí no se aprecia que solo hay medio escalon, pero en la siguiente figura lo veremos claro.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Three dAMPs bonded in a single DNA strand" src="/images/sstriamp.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Figura 2. Tres dAMPs enlazados.&lt;/p&gt;
-&lt;p&gt;Para completar la escalera de caracol añadimos la cadena complementaria (Fig. 3). ¿Te has dado cuenta de que la nueva cadena tiene las bases nitrogenadas coloreadas en azul claro? Efectivamente, las he coloreado de otro color porque estas bases nitrogenadas no son Adeninas, sino Timinas. Por tanto, estos tres desoxirribónucleotidos se llaman desoxitimidina monofosfato (deoxythymidine monophosphate, dTMP).&lt;/p&gt;
-&lt;p&gt;Otra cosa: si miras cada cadena de abajo hacia arriba, la de las bases nitrogenadas azul oscuro va amarillo-verde, amarillo-verde, amarillo verde. Si haces lo mismo con la cadena con las bases nitrogenadas azul claro, esta va verde-amarillo, verde-amarillo, verde-amarillo. Es como si fueran al contrario la una de la otra. Van en sentidos opuestos. Por eso se dice que son antiparalelas. ¿Y esto para qué sirve? Recientemente unos investigadores han sugerido que esto parece ayudar cuando el ADN se replica (se copia) (Subramanian et al., 2020).&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Double strand of DNA with three dAMPs and three dTMPs" src="/images/dsaaattt.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Figura 3. Doble cadena de ADN, compuesta de 3x dAMPs y 3x dTMPs.&lt;/p&gt;
-&lt;p&gt;Ahora vamos a dar un paso atrás. En la Fig. 4 he aislado la pareja de desoxirribonucleótidos de arriba de la doble cadena de la Fig. 3.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="dAMP and dTMP seen from the side" src="/images/at-couple-roll.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Figura 4. dAMP y dTMP, vista lateral.&lt;/p&gt;
-&lt;h2&gt;Cuatro desoxirribonucleotidos forman el ADN&lt;/h2&gt;
-&lt;p&gt;Si miramos la pareja de desoxirribonucleótidos de la Fig. 4 desde arriba, y sin girar (Fig. 5), se pueden ver claramente las dos bases nitrogenadas (Adenina, azul, a la izquierda y Timina, azul claro, a la derecha). Llama la atención lo planas que son las bases nitrogenadas, ¿verdad? Ahí tienes el escalón entero.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="dAMP and dTMP seen from the top" src="/images/at-monocolor-from-top.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Figura 5. dAMP y dTMP, vistas desde arriba.&lt;/p&gt;
-&lt;p&gt;Ahora vamos con esas dos líneas discontinuas. Estas líneas simbolizan los dos enlaces que mantienen unidas a la Adenina y la Timina. Estos enlaces son lo suficientemente fuertes para mantenerlas unidas, pero al mismo tiempo permiten que la doble cadena de ADN se abra y cierre como una cremallera. Estos enlaces se conocen como enlaces de hidrógeno.&lt;/p&gt;
-&lt;p&gt;En la Fig. 6 os presento a la otra pareja de desoxirribonucleótidos que forman el ADN: dGMP (con Guanina como base nitrogenada, en rojo) y dCMP (con Citosina como base nitrogenada, en rosa). Como podrás comprobar, la parte amarilla y la parte verde siguen siendo iguales que siempre.&lt;/p&gt;
-&lt;p&gt;¿Te has fijado en que la Guanina y la Citosina forman tres enlaces de hidrógeno entre si? Esta diferencia con la pareja Adenina=Timina (que solo forman dos enlaces de hidrógeno) es crucial en genética: La Adenina solo puede emparejarse con la Timina, y la Guanina solo puede emparejarse con la Citosina.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Single strand of DNA" src="/images/dna-ds-1.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Figura 6. dGMP y dCMP, vistos desde arriba&lt;/p&gt;
-&lt;p&gt;Si A solo enlaza con T y G solo enlaza con C, podemos deducir que la secuencia de una cadena determina la secuencia de la otra cadena. Por eso se dice que ambas cadenas, además de antiparalelas, son complementarias. En la Fig. 7 puedes ver una sola cadena de ADN de 10 desoxirribonucleótidos de longitud. La variedad de colores que puedes observar se debe a la presencia de los cuatro desoxirribonucleótidos.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Single strand of DNA" src="/images/dna-ds-1.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Figura 7. Cadena simple de ADN&lt;/p&gt;
-&lt;p&gt;Ahora añadimos la otra cadena, y así obtenemos la doble cadena de ADN, y con ello la escalera de caracol completa. ¡Pero ten cuidado, que se puede abrir por la mitad como una cremallera!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Double strand of DNA" src="/images/dsdna.gif"&gt;&lt;/p&gt;
-&lt;p&gt;Figura 8. Doble cadena de ADN&lt;/p&gt;
-&lt;p&gt;Las moléculas que aparecen en este post las he construido utilizando el programa Avogadro: Hanwell, M.D., Curtis, D.E., Lonie, D.C. et al. Avogadro: an advanced semantic chemical editor, visualization, and analysis platform. J Cheminform 4, 17 (2012). doi: 10.1186/1758-2946-4-17&lt;/p&gt;
-&lt;p&gt;Estas moléculas producidas las he renderizado utilizando UCFS ChimeraX: Pettersen, EF, Goddard, TD, Huang, CC, et al. UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Protein Science. 2021; 30: 70– 82. doi: 10.1002/pro.3943&lt;/p&gt;
-&lt;p&gt;Los videos creados con UCFS ChimeraX los he convertido en Gifs animados utilizando Ezgif&lt;/p&gt;</content><category term="articles"/></entry><entry><title>¿Qué omega-3 son esenciales? LA, ALA, EPA y DHA explicados</title><link href="https://prado-cabrero.com/que-omega-3-son-esenciales/" rel="alternate"/><published>2025-05-20T10:00:00+01:00</published><updated>2025-05-20T10:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-05-20:/que-omega-3-son-esenciales/</id><summary type="html">&lt;p&gt;Read this article in &lt;a href="/which-omega-3s-are-essential/"&gt;English&lt;/a&gt; &lt;/p&gt;
+&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+function styleDNA(viewer, group, color) {
+  viewer.setStyle({resn: group, elem: "P"},
+    {sphere: {color: color, radius: 0.45, quality: "0"}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "O"},
+    {sphere: {color: color, radius: 0.30, quality: "0"}, stick: {radius: 0.15, color: color …&lt;/script&gt;</summary><content type="html">&lt;p&gt;Read this post in &lt;a href="/a-different-way-to-explain-the-structure-of-dna/"&gt;English&lt;/a&gt;&lt;/p&gt;
+&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+function styleDNA(viewer, group, color) {
+  viewer.setStyle({resn: group, elem: "P"},
+    {sphere: {color: color, radius: 0.45, quality: "0"}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "O"},
+    {sphere: {color: color, radius: 0.30, quality: "0"}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "C"},
+    {sphere: {color: color, radius: 0.35, quality: "0"}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "N"},
+    {sphere: {color: color, radius: 0.38, quality: "0"}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "H"},
+    {sphere: {color: color, radius: 0.20, quality: "0"}, stick: {radius: 0.10, color: color}});
+}
+
+function showHBonds(viewer) {
+  viewer.addStyle({}, {});  // ensure all atoms are processed
+  viewer.setClickable({}, true, function(){});  // needed for some versions
+
+  // Get all donor-acceptor pairs and draw dashed lines
+  var atoms = viewer.getModel().selectedAtoms({});
+  for (var i = 0; i &lt; atoms.length; i++) {
+    for (var j = i + 1; j &lt; atoms.length; j++) {
+      var a = atoms[i];
+      var b = atoms[j];
+      // Only N and O can be H-bond donors/acceptors
+      if ((a.elem === "N" || a.elem === "O") &amp;&amp; 
+          (b.elem === "N" || b.elem === "O")) {
+        var dx = a.x - b.x;
+        var dy = a.y - b.y;
+        var dz = a.z - b.z;
+        var dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
+        // H-bond distance: 2.5–3.5 Å, only between different chains/residues
+        if (dist &gt; 2.5 &amp;&amp; dist &lt; 3.5 &amp;&amp; a.resi !== b.resi) {
+          viewer.addCylinder({
+            start: {x: a.x, y: a.y, z: a.z},
+            end: {x: b.x, y: b.y, z: b.z},
+            radius: 0.04,
+            color: "grey",
+            dashed: true,
+            dashLength: 0.15,
+            gapLength: 0.1
+          });
+        }
+      }
+    }
+  }
+}
+
+function showMolecule(divId, file, groups, options) {
+  options = options || {};
+  var rotateX  = options.rotateX  || 0;
+  var rotateY  = options.rotateY  || 0;
+  var rotateZ  = options.rotateZ  || 0;
+  var spinAxis = options.spinAxis || "z";
+  var spinSpeed = options.spinSpeed !== undefined ? options.spinSpeed : -2.0;
+  var fog      = options.fog !== undefined ? options.fog : true;
+  var zoom = options.zoom || 1;
+  var hbonds = options.hbonds || [];
+
+  fetch(file)
+    .then(function(r) {
+      if (!r.ok) {
+        document.getElementById(divId).innerHTML =
+          "&lt;p style='padding:2rem;color:#555;'&gt;Could not load " + file + "&lt;/p&gt;";
+        throw new Error("Not found");
+      }
+      return r.text();
+    })
+    .then(function(data) {
+      var viewer = $3Dmol.createViewer(divId, {backgroundColor: "white"});
+
+      //viewer.setSphereQuality("low");     // &lt;-- add
+      // viewer.setStickQuality("low");      // &lt;-- add (if supported in your version)
+
+      if (fog) viewer.enableFog(false);
+
+      viewer.addModel(data, "pdb", {keepH: true});
+
+      // Apply colour groups
+      for (var i = 0; i &lt; groups.length; i++) {
+      styleDNA(viewer, groups[i].group, groups[i].color);
+      }
+
+    // Apply colour groups
+    for (var i = 0; i &lt; groups.length; i++) {
+      styleDNA(viewer, groups[i].group, groups[i].color);
+    }
+
+    // Draw hydrogen bonds as dashed lines
+    if (hbonds.length &gt; 0) {
+      var atoms = viewer.getModel().selectedAtoms({});
+      for (var i = 0; i &lt; hbonds.length; i++) {
+        var a = atoms[hbonds[i][0] - 1];
+        var b = atoms[hbonds[i][1] - 1];
+        if (a &amp;&amp; b) {
+          viewer.addCylinder({
+            start: {x: a.x, y: a.y, z: a.z},
+            end: {x: b.x, y: b.y, z: b.z},
+            radius: 0.03,
+            color: "grey",
+            dashed: true,
+            dashLength: 0.15,
+            gapLength: 0.1
+          });
+        }
+      }
+    }
+    viewer.zoomTo();
+
+      viewer.zoomTo();
+      viewer.zoom(zoom);
+      if (rotateX) viewer.rotate(rotateX, "x");
+      if (rotateY) viewer.rotate(rotateY, "y");
+      if (rotateZ) viewer.rotate(rotateZ, "z");
+      if (spinSpeed) viewer.spin(spinAxis, spinSpeed);
+
+      var container = document.getElementById(divId);
+      container.addEventListener("mousedown", function() { viewer.spin(false); });
+      container.addEventListener("touchstart", function() { viewer.spin(false); });
+      container.addEventListener("dblclick", function() { viewer.spin(spinAxis, spinSpeed); });
+
+      viewer.render();
+    });
+}
+&lt;/script&gt;
+
+&lt;p&gt;Lee este artículo en &lt;a href="/la-estructura-del-adn-explicada-de-una-forma-diferente/"&gt;español&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;El ADN está compuesto por desoxinucleótidos. Familiarizarte con estos componentes básicos y con como dan forma al ADN abre la puerta a comprender la genética. Creo que un mínimo de detalles químicos y animaciones que puedes manipular te ayudarán a familiarizarte con la molécula de la vida.&lt;/p&gt;
+&lt;p&gt;Por lo tanto, aquí nos centramos en la estructura 3D del ADN con animaciones interactivas. Puedes hacer clic en una imagen para detener la rotación, arrastrar para rotar, hacer zoom, y hacer doble clic para reanudar la rotación automática. De esta manera, espero que te familiarices con el ADN desde todos los ángulos. ¡Empecemos a jugar!&lt;/p&gt;
+&lt;h2&gt;Descripción general de la estructura de los desoxinucleótidos&lt;/h2&gt;
+&lt;p&gt;El ADN se parece a una escalera de caracol, donde cada desoxinucleótido constituye un segmento del pasamanos y medio peldaño. En la Fig. 1, mostramos la forma del dAMP, uno de los cuatro desoxinucleótidos que componen el ADN. La 5-desoxirribosa (en verde) y el grupo fosfato (en amarillo) forman parte del pasamanos; la base nitrogenada (en azul) constituye medio peldaño.&lt;/p&gt;
+&lt;div id="mol1" style="width:100%; max-width:600px; height:350px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol1", "/images/molecules/adenylate-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "BAS", color: "#00bfff"}
+], {rotateX: 90, rotateY: 0, zoom: 1, spinAxis: [0, 0, 1]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figura 1.&lt;/strong&gt; &lt;strong&gt;dAMP&lt;/strong&gt; (desoxiAdenosina Monofosfato) representado como bolas (átomos) y varillas (enlaces entre átomos).&lt;/p&gt;
+&lt;h2&gt;Vamos a unir las partes (los desoxinucleótidos)&lt;/h2&gt;
+&lt;p&gt;Ahora juntemos tres dAMP. Una vez unidos, forman una sola hebra de ADN (Fig. 2). Usamos el mismo patrón de colores que en la Fig. 1, para dejar claro qué parte de los desoxinucleótidos forma los peldaños y qué parte forma el pasamanos. Pero de esta manera, parece que estamos construyendo solo un lado de la escalera de caracol…&lt;/p&gt;
+&lt;div id="mol2" style="width:100%; max-width:600px; height:450px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol2", "/images/molecules/tri-adenylate-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "BAS", color: "#00bfff"}
+], {rotateX: 90, rotateY: 0, zoom: 1});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 2. Tres dAMPs in unidos.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Ahora completamos la escalera de caracol…&lt;/h2&gt;
+&lt;p&gt;Para completar esta escalera de tres peldaños, agreguamos la parte que falta, que es la cadena complementaria. Esto completa una doble hebra de ADN (Figura 3). Pero quizá hayas notado que los otros medios peldaños son rojos. Eso se debe a que estos dNTPs son diferentes. Son dTTP (portan timina, una base diferente). Resulta que en un &amp;lsquo;peldaño&amp;rsquo; de ADN, el dATP solo puede coexistir con dTTP, ya que las dos bases son exclusivamente complementarias.&lt;/p&gt;
+&lt;div id="mol3" style="width:100%; max-width:600px; height:350px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol3", "/images/molecules/aaa-ttt-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 90, zoom: 1.6, hbonds: [
+  [18, 179], [17, 181],   // A1 ··· T3
+  [51, 147], [50, 149],   // A2 ··· T2
+  [83, 114], [82, 116]    // A3 ··· T1
+]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figura 3. Doble cadena de ADN.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ahora, dos cosas:&lt;/p&gt;
+&lt;p&gt;Primero, ¿notaste que último fosfato de cada hebra apunta uno hacia arriba y el otro hacia abajo? Esto significa que ambas hebras corren en direcciones opuestas; son (anti)paralelas. Pero, ¿por qué antiparalelas? Los investigadores sugieren que esta característica facilita la replicación del ADN &lt;a href="https://www.nature.com/articles/s41598-020-66705-3"&gt;(Subramanian et al., 2020)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Segundo, Has visto las líneas discontinuas entre las bases? Estas denotan puentes de hidrógeno, un tipo de interacción débil que mantiene unidas las bases y, por extensión, las dos hebras. Como estos enlaces son débiles, pueden separarse con un aporte de energía. Imaginatelo como una cremallera que se puede abrir y cerrar.&lt;/p&gt;
+&lt;p&gt;Ahora, para verlo más claro, observa un solo peldaño (dATP y dTTP) desde arriba. Dos puentes de hidrógeno los mantienen unidos. Puedes jugar con la imagen.&lt;/p&gt;
+&lt;div id="mol4" style="width:100%; max-width:600px; height:300px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol4", "/images/molecules/at-pair-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 0, rotateY: 0, rotateZ: -90, zoom: 1.6, spinSpeed: 0, hbonds: [[18, 49], [17, 51]]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figura 4. Pareja de dATP y dTTP.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Cuatro desoxinucleótidos componen el ADN&lt;/h2&gt;
+&lt;p&gt;Pero recuerda, el ADN se forma no con dos, sino con cuatro desoxinucleótidos. Los dos restantes son dCTP y dGTP (Fig. 5). Observa que este par de nucleótidos está unido por tres puentes de hidrógeno. Sí, el &amp;ldquo;pegamento&amp;rdquo; entre estos dos nucleótidos es más fuerte que el que hay entre dATP y dTTP.&lt;/p&gt;
+&lt;div id="mol5" style="width:100%; max-width:600px; height:300px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol5", "/images/molecules/cg-pair-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "GUA", color: "#0000FF"},
+  {group: "CYT", color: "#FF6933"}
+], {rotateX: 0, rotateY: 0,  rotateZ: -90, zoom: 1.6,  spinSpeed: 0, hbonds: [
+  [17, 52],   // G O6  ··· C N4
+  [18, 50],   // G N1  ··· C N3
+  [20, 49]    // G N2  ··· C O2
+]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figura 5. Pareja de dCMP y dGMP.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Completando la doble hebra&lt;/h2&gt;
+&lt;p&gt;Por lo tanto, deducimos que la secuencia de desoxinucleótidos en una hebra determina infaliblemente la secuencia de desoxinucleótidos en la otra. Por consiguiente, se dice que las dos hebras son complementarias. A continuación, para mayor claridad, se muestra una de las hebras de ADN con las bases nitrogenadas coloreadas como arriba, para que puedas leer la secuencia de desoxinucleótidos.&lt;/p&gt;
+&lt;div id="mol6" style="width:100%; max-width:700px; height:700px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol6", "/images/molecules/acgtggatca-ss-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "CYT", color: "#FF6933"},
+  {group: "GUA", color: "#0000FF"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 90, zoom: 1.1, spinSpeed: 0});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figura 5. Hebra simple de ADN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ahora agregamos la otra hebra, y obtenemos la doble hélice de ADN: la escalera completa, con dos pasamanos, y peldaños formados cada uno por dos piezas.&lt;/p&gt;
+&lt;div id="mol7" style="width:100%; max-width:700px; height:700px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol7", "/images/molecules/acgtggatca-ds-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "CYT", color: "#FF6933"},
+  {group: "GUA", color: "#0000FF"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 90, zoom: 1, spinSpeed: 0, hbonds: [[18, 622], [17, 624], [50, 591], [48, 592], [47, 594], [80, 561], [81, 559], [83, 558], [111, 530], [113, 529], [145, 499], [146, 497], [148, 496], [178, 469], [179, 467], [181, 466], [212, 435], [211, 437], [241, 406], [243, 405], [275, 372], [273, 373], [272, 375], [306, 337], [305, 339]]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figura 6. Doble hebra de ADN&lt;/strong&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>¿Qué omega-3 son esenciales? LA, ALA, EPA y DHA explicados</title><link href="https://prado-cabrero.com/que-omega-3-son-esenciales/" rel="alternate"/><published>2025-05-20T10:00:00+01:00</published><updated>2025-05-20T10:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-05-20:/que-omega-3-son-esenciales/</id><summary type="html">&lt;p&gt;Read this article in &lt;a href="/which-omega-3s-are-essential/"&gt;English&lt;/a&gt; &lt;/p&gt;
 &lt;h2&gt;Introducción&lt;/h2&gt;
 &lt;p&gt;Déjame adivinar: piensas que necesitamos tomar aceite de pescado para estar sanos. Pues bien, eso es otro logro del marketing. La realidad es que el EPA y el DHA, los archifamosos componentes del aceite de pescado, no son esenciales en absoluto. Mientras lees esto …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Read this article in &lt;a href="/which-omega-3s-are-essential/"&gt;English&lt;/a&gt; &lt;/p&gt;
 &lt;h2&gt;Introducción&lt;/h2&gt;
