@@ -157,43 +157,245 @@ Nosotros, los humanos, podemos utilizar ambos tipos de vitamina D (animal y fún
 &lt;p&gt;&lt;a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3202024/"&gt;Rapoport, S. I., Ramadan, E., &amp;amp; Basselin, M. (2011). Docosahexaenoic acid (DHA) incorporation into the brain from plasma, as an in vivo biomarker of brain DHA metabolism and neurotransmission. &lt;em&gt;Prostaglandins Other Lipid Mediat, 96&lt;/em&gt;(1-4), 109-113.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://journals.lww.com/co-clinicalnutrition/fulltext/2023/05000/heterogeneity_in_the_response_to_n_3.14.aspx"&gt;Shaikh, S. R., &amp;amp; Bazinet, R. P. (2023). Heterogeneity in the response to n-3 polyunsaturated fatty acids. &lt;em&gt;Current Opinion in Clinical Nutrition &amp;amp; Metabolic Care, 26&lt;/em&gt;(3).&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.mdpi.com/2072-6643/15/1/161"&gt;Sinclair, A. J., Wang, Y., &amp;amp; Li, D. (2022). What Is the Evidence for Dietary-Induced DHA Deficiency in Human Brains? &lt;em&gt;Nutrients, 15&lt;/em&gt;(1).&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.jlr.org/article/S0022-2275(20)35636-4/fulltext"&gt;Spector, A. A., &amp;amp; Kim, H.-Y. (2015). Discovery of essential fatty acids. &lt;em&gt;Journal of Lipid Research, 56&lt;/em&gt;(1), 11-21.&lt;/a&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>DNA structure explained visually: nucleotides and the double helix</title><link href="https://prado-cabrero.com/a-different-way-to-explain-the-structure-of-dna/" rel="alternate"/><published>2025-05-20T10:00:00+01:00</published><updated>2025-05-20T10:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-05-20:/a-different-way-to-explain-the-structure-of-dna/</id><summary type="html">&lt;p&gt;Lee este artículo en &lt;a href="/la-estructura-del-adn-explicada-de-una-forma-diferente/"&gt;español&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.jlr.org/article/S0022-2275(20)35636-4/fulltext"&gt;Spector, A. A., &amp;amp; Kim, H.-Y. (2015). Discovery of essential fatty acids. &lt;em&gt;Journal of Lipid Research, 56&lt;/em&gt;(1), 11-21.&lt;/a&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>DNA structure explained visually: nucleotides and the double helix</title><link href="https://prado-cabrero.com/a-different-way-to-explain-the-structure-of-dna/" rel="alternate"/><published>2025-09-21T00:00:00+01:00</published><updated>2025-09-21T00:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-09-21:/a-different-way-to-explain-the-structure-of-dna/</id><summary type="html">&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+function styleDNA(viewer, group, color) {
+  viewer.setStyle({resn: group, elem: "P"},
+    {sphere: {color: color, radius: 0.45}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "O"},
+    {sphere: {color: color, radius: 0.30}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "C"},
+    {sphere: {color: color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://3Dmol.org/build/3Dmol-min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+function styleDNA(viewer, group, color) {
+  viewer.setStyle({resn: group, elem: "P"},
+    {sphere: {color: color, radius: 0.45}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "O"},
+    {sphere: {color: color, radius: 0.30}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "C"},
+    {sphere: {color: color, radius: 0.35}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "N"},
+    {sphere: {color: color, radius: 0.38}, stick: {radius: 0.15, color: color}});
+  viewer.setStyle({resn: group, elem: "H"},
+    {sphere: {color: color, radius: 0.20}, stick: {radius: 0.10, color: color}});
+}
+
+function showHBonds(viewer) {
+  viewer.addStyle({}, {});  // ensure all atoms are processed
+  viewer.setClickable({}, true, function(){});  // needed for some versions
+
+  // Get all donor-acceptor pairs and draw dashed lines
+  var atoms = viewer.getModel().selectedAtoms({});
+  for (var i = 0; i &lt; atoms.length; i++) {
+    for (var j = i + 1; j &lt; atoms.length; j++) {
+      var a = atoms[i];
+      var b = atoms[j];
+      // Only N and O can be H-bond donors/acceptors
+      if ((a.elem === "N" || a.elem === "O") &amp;&amp; 
+          (b.elem === "N" || b.elem === "O")) {
+        var dx = a.x - b.x;
+        var dy = a.y - b.y;
+        var dz = a.z - b.z;
+        var dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
+        // H-bond distance: 2.5–3.5 Å, only between different chains/residues
+        if (dist &gt; 2.5 &amp;&amp; dist &lt; 3.5 &amp;&amp; a.resi !== b.resi) {
+          viewer.addCylinder({
+            start: {x: a.x, y: a.y, z: a.z},
+            end: {x: b.x, y: b.y, z: b.z},
+            radius: 0.04,
+            color: "grey",
+            dashed: true,
+            dashLength: 0.15,
+            gapLength: 0.1
+          });
+        }
+      }
+    }
+  }
+}
+
+function showMolecule(divId, file, groups, options) {
+  options = options || {};
+  var rotateX  = options.rotateX  || 0;
+  var rotateY  = options.rotateY  || 0;
+  var rotateZ  = options.rotateZ  || 0;
+  var spinAxis = options.spinAxis || "z";
+  var spinSpeed = options.spinSpeed !== undefined ? options.spinSpeed : -2.0;
+  var fog      = options.fog !== undefined ? options.fog : true;
+  var outline  = options.outline  || 0.02;
+  var zoom = options.zoom || 1;
+  var hbonds = options.hbonds || [];
+
+  fetch(file)
+    .then(function(r) {
+      if (!r.ok) {
+        document.getElementById(divId).innerHTML =
+          "&lt;p style='padding:2rem;color:#555;'&gt;Could not load " + file + "&lt;/p&gt;";
+        throw new Error("Not found");
+      }
+      return r.text();
+    })
+    .then(function(data) {
+      var viewer = $3Dmol.createViewer(divId, {backgroundColor: "white"});
+      if (fog) viewer.enableFog(true);
+      viewer.setViewStyle({style: "outline", color: "black", width: outline});
+
+      viewer.addModel(data, "pdb", {keepH: true});
+
+      // Apply colour groups
+      for (var i = 0; i &lt; groups.length; i++) {
+      styleDNA(viewer, groups[i].group, groups[i].color);
+      }
+
+    // Apply colour groups
+    for (var i = 0; i &lt; groups.length; i++) {
+      styleDNA(viewer, groups[i].group, groups[i].color);
+    }
+
+    // Draw hydrogen bonds as dashed lines
+    if (hbonds.length &gt; 0) {
+      var atoms = viewer.getModel().selectedAtoms({});
+      for (var i = 0; i &lt; hbonds.length; i++) {
+        var a = atoms[hbonds[i][0] - 1];
+        var b = atoms[hbonds[i][1] - 1];
+        if (a &amp;&amp; b) {
+          viewer.addCylinder({
+            start: {x: a.x, y: a.y, z: a.z},
+            end: {x: b.x, y: b.y, z: b.z},
+            radius: 0.03,
+            color: "grey",
+            dashed: true,
+            dashLength: 0.15,
+            gapLength: 0.1
+          });
+        }
+      }
+    }
+    viewer.zoomTo();
+
+      viewer.zoomTo();
+      viewer.zoom(zoom);
+      if (rotateX) viewer.rotate(rotateX, "x");
+      if (rotateY) viewer.rotate(rotateY, "y");
+      if (rotateZ) viewer.rotate(rotateZ, "z");
+      if (spinSpeed) viewer.spin(spinAxis, spinSpeed);
+
+      var container = document.getElementById(divId);
+      container.addEventListener("mousedown", function() { viewer.spin(false); });
+      container.addEventListener("touchstart", function() { viewer.spin(false); });
+      container.addEventListener("dblclick", function() { viewer.spin(spinAxis, spinSpeed); });
+
+      viewer.render();
+    });
+}
+&lt;/script&gt;
+
+&lt;p&gt;Lee este artículo en &lt;a href="/la-estructura-del-adn-explicada-de-una-forma-diferente/"&gt;español&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;DNA is made up of deoxynucleotides. Getting familiar with these building blocks and how they shape DNA opens the door to understanding genetics. In contrast to the classic approach, I believe that less chemical details plus plenty of animations helps to start getting familiar …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Lee este artículo en &lt;a href="/la-estructura-del-adn-explicada-de-una-forma-diferente/"&gt;español&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;DNA is made up of deoxynucleotides. Getting familiar with these building blocks and how they shape DNA opens the door to understanding genetics. In contrast to the classic approach, I believe that less chemical details plus plenty of animations helps to start getting familiar with the molecule of life. Therefore, here we do not get into the detail of atomic composition of DNA. Instead, we focus on 3D structure with animations (maybe they take a while to load). In this way, I hope you become familiar with DNA from all angles.&lt;/p&gt;
+&lt;p&gt;DNA is made up of deoxynucleotides. Getting familiar with these building blocks and how they shape DNA opens the door to understanding genetics. I believe that a minimum of chemical details plus plenty of animations that you can manipulate will help you start to become familiar with the molecule of life.&lt;/p&gt;
+&lt;p&gt;Therefore, here we focus on DNA 3D structure with interactive animations. You can click on an image to stop rotation, drag to rotate, scroll to zoom in or zoom out, and double-click to resume auto rotation. In this way, I hope you become familiar with DNA from all angles. Let&amp;rsquo;s start playing!&lt;/p&gt;
 &lt;h2&gt;Deoxynucleotide structure overview&lt;/h2&gt;
-&lt;p&gt;We can define DNA structurally as an spiral staircase, where each deoxynucleotides would be part of both one rail and half rung. In Fig. 1 we show the shape of dAMP, one of the four deoxynucleotides that make up DNA. The 5-deoxyribose (in green) and the phosphate group (in orange) would form part of the rail; the nitrogenous base (in blue), would make up half a rung.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="dAMP ball and stick model" src="/images/damp-1.gif"&gt;&lt;/p&gt;
+&lt;p&gt;DNA looks like a spiral staircase, where each deoxynucleotide makes up a segment of the rail and half a rung. In Fig. 1, we show the shape of dAMP, one of the four deoxynucleotides that make up DNA. The 5-deoxyribose (in green) and the phosphate group (in yellow) form part of the rail; the nitrogenous base (in blue) makes up half a rung.&lt;/p&gt;
+&lt;div id="mol1" style="width:100%; max-width:600px; height:350px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol1", "/images/molecules/adenylate-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "BAS", color: "#00bfff"}
+], {rotateX: 90, rotateY: 0, outline: 0.04, zoom: 1, spinAxis: [0, 0, 1]});
+&lt;/script&gt;
+
 &lt;p&gt;&lt;strong&gt;Figure 1.&lt;/strong&gt; &lt;strong&gt;dAMP&lt;/strong&gt; (&lt;strong&gt;d&lt;/strong&gt;eoxy&lt;strong&gt;A&lt;/strong&gt;denosine &lt;strong&gt;M&lt;/strong&gt;ono&lt;strong&gt;P&lt;/strong&gt;hosphate) represented as ball (atoms) and sticks (bonds between atoms).&lt;/p&gt;
-&lt;h2&gt;This is how deoxynucleotides bind together&lt;/h2&gt;
-&lt;p&gt;Now let’s put together three dAMPs, which bonded form a single DNA strand (Fig. 2). The same coloring pattern of Fig. 1 is used, to make it clear which part of the deoxynucleotides are forming the rungs and which part is forming the rail. But with this, it looks like that we are building only half side of the spiral staircase…&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Three dAMPs bonded in a single DNA strand" src="/images/sstriamp.gif"&gt;&lt;/p&gt;
+&lt;h2&gt;Let&amp;rsquo;s bind the parts (the deoxynucleotides)&lt;/h2&gt;
+&lt;p&gt;Now let&amp;rsquo;s put together three dAMPs that, once bonded, form a single DNA strand (Fig. 2). The same coloring pattern as in Fig. 1 is used, to make it clear which part of the deoxynucleotides is forming the rungs and which part is forming the rail. But this way, it looks like we are building only one side of the spiral staircase…&lt;/p&gt;
+&lt;div id="mol2" style="width:100%; max-width:600px; height:450px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol2", "/images/molecules/tri-adenylate-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "BAS", color: "#00bfff"}
+], {rotateX: 90, rotateY: 0, outline: 0.04, zoom: 1});
+&lt;/script&gt;
+
 &lt;p&gt;&lt;strong&gt;Figure 2. Three dAMPs in a row.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To complete the staircase, we add the complementary chain and we end up with a double strand of DNA (Figure 3). But the newly added strand has the nitrogenous bases colored in light blue. Yes, they are different from adenine. These are thymines.&lt;/p&gt;
-&lt;p&gt;Now, for note, did you notice that the last phosphate is pointing up in one strand and down in the other? This means that both strands run in opposite directions. DNA double helix is antiparalell. Why antiparalell? Researchers have recently suggested that this seems to help with DNA replication &lt;a href="https://www.nature.com/articles/s41598-020-66705-3"&gt;(Subramanian et al., 2020)&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Double strand of DNA with three dAMPs and three dTMPs" src="/images/dsaaattt.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 3. Double strand of DNA (dsDNA) composed of 3x dAMPs and 3x dTMPs.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Now let’s step back and focus on the pair of deoxynucleotides at the top of the DNA helix from the previous Figure.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="dAMP and dTMP seen from the side" src="/images/at-couple-roll.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 4. dAMP and dTMP, side view.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Now completing the spiral staircase&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;To complete this staircase of three rungs, let&amp;rsquo;s add the missing part, which is the complementary chain. This completes a double strand of DNA (Figure 3). But you may have noticed that the other half-rungs are red! That is because these dNTPs are different. They are dTTP (they bear thymine, a different base). In a DNA &amp;lsquo;rung&amp;rsquo;, dATP can only coexist with dTTP, since the two bases are exclusively complementary.&lt;/p&gt;
+&lt;div id="mol3" style="width:100%; max-width:600px; height:350px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol3", "/images/molecules/aaa-ttt-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 90, outline: 0.04, zoom: 1.6, hbonds: [
+  [18, 179], [17, 181],   // A1 ··· T3
+  [51, 147], [50, 149],   // A2 ··· T2
+  [83, 114], [82, 116]    // A3 ··· T1
+]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 3. Double strand of DNA.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now, two things:&lt;/p&gt;
+&lt;p&gt;First, did you notice that the last free phosphates point up in one strand and down in the other? This means that both strands run in opposite directions; they are (anti)parallel. But why antiparallel? Researchers suggest that this feature facilitates DNA replication &lt;a href="https://www.nature.com/articles/s41598-020-66705-3"&gt;(Subramanian et al., 2020)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Second, did you notice the dashed lines between the bases? These denote hydrogen bonds, a type of weak interaction that keeps the bases, and by extension the two strands, together. Since these bonds are weak, they can be separated with some energy input. Think of it as a zip that can be opened and closed.&lt;/p&gt;
+&lt;p&gt;For a clearer view, take a look at a single rung (composed of dATP and dTTP) from above. Two hydrogen bonds hold them together. You can play with the image.&lt;/p&gt;
+&lt;div id="mol4" style="width:100%; max-width:600px; height:300px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol4", "/images/molecules/at-pair-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 0, rotateY: 0, rotateZ: -90, zoom: 1.6, outline: 0.04, spinSpeed: 0, hbonds: [[18, 49], [17, 51]]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 4. dATP and dTTP pair.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;Four deoxynucleotides make up DNA&lt;/h2&gt;
-&lt;p&gt;Let’s take a top view of the pair of nucleotides of Fig. 4. Now you can see the nitrogenous bases clearly. Adenine (blue, left) and thymine (light blue, right). Both with their striking planar shape (Fig. 5).&lt;/p&gt;
-&lt;p&gt;&lt;img alt="dAMP and dTMP seen from the top" src="/images/at-monocolor-from-top.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 5. dAMP and dTMP, top view.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;And yes, you noticed them. What are those dashed lines? These lines symbolize the bonds that keep the two deoxynucleotides attracting to each other. These bonds, all along the DNA molecule, keep both strands of the double helix together. They are called hydrogen bonds. These bonds are strong enough to keep the two strands together, but also weak enough to unzip the double helix when needed!&lt;/p&gt;
-&lt;p&gt;Now, below we introduce the other pair of deoxynucleotides that forms part of DNA: dGMP (with guanine as nitrogenous base, in red) and dCTP (with cytosine as nitrogenous base, in pink). Did you notice that this pair of nitrogenous bases establish three double bonds between them, instead of two, like in A=T? This difference is essential: Adenine can only pair with Thymine, and Guanine only pairs with Cytosine.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Single strand of DNA" src="/images/dna-ds-1.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 6. dGMP and dCMP, top view&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Therefore, we deduce that the sequence of deoxynucleotides in one strand unfailingly determines the sequence of deoxynucleotides in the other. Hence, both strands are said to be complementary. Below you can see, for clarity, one of the strands of DNA with the nitrogenous bases colored as above, so you can see the sequence of deoxynucleotides.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Single strand of DNA" src="/images/dna-ds-1.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 7. Single strand of DNA (ssDNA)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;And now we add the other strand, and we get the double strand of DNA, and the complete staircase: two rails and rungs made up of two pieces each one.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Double strand of DNA" src="/images/dsdna.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 8. Double strand of DNA (dsDNA)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The molecules appearing in this post have been built using &lt;a href="https://avogadro.cc/"&gt;Avogadro&lt;/a&gt;: Hanwell, M.D., Curtis, D.E., Lonie, D.C. &lt;em&gt;et al.&lt;/em&gt; Avogadro: an advanced semantic chemical editor, visualization, and analysis platform. &lt;em&gt;J Cheminform&lt;/em&gt; 4&lt;strong&gt;,&lt;/strong&gt; 17 (2012). doi: &lt;a href="https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-4-17#citeas"&gt;10.1186/1758-2946-4-17&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;These molecules have been rendered using &lt;a href="https://www.cgl.ucsf.edu/chimera/"&gt;UCFS ChimeraX&lt;/a&gt;: Pettersen, EF, Goddard, TD, Huang, CC, et al. UCSF ChimeraX: Structure visualization for researchers, educators, and developers. &lt;em&gt;Protein Science&lt;/em&gt;. 2021; 30: 70– 82. doi: &lt;a href="https://onlinelibrary.wiley.com/doi/10.1002/pro.3943"&gt;10.1002/pro.3943&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The videos created with UCFS ChimeraX have been converted to animated gifs using &lt;a href="https://ezgif.com/video-to-gif"&gt;Ezgif&lt;/a&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>La estructura del ADN explicada visualmente: nucleótidos y doble hélice</title><link href="https://prado-cabrero.com/la-estructura-del-adn-explicada-de-una-forma-diferente/" rel="alternate"/><published>2025-05-20T10:00:00+01:00</published><updated>2025-05-20T10:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-05-20:/la-estructura-del-adn-explicada-de-una-forma-diferente/</id><summary type="html">&lt;p&gt;Read this post in &lt;a href="/a-different-way-to-explain-the-structure-of-dna/"&gt;English&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But remember, DNA has not just two, but four deoxynucleotides. The remaining two are dCTP and dGTP (Fig. 5). Notice that this pair of nucleotides is held together by three hydrogen bonds. Yes, the &amp;ldquo;glue&amp;rdquo; between these two nucleotides is stronger than that between dATP and dTTP.&lt;/p&gt;
+&lt;div id="mol5" style="width:100%; max-width:600px; height:300px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol5", "/images/molecules/cg-pair-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "GUA", color: "#0000FF"},
+  {group: "CYT", color: "#FF6933"}
+], {rotateX: 0, rotateY: 0,  rotateZ: -90, zoom: 1.6,  outline: 0.04, spinSpeed: 0, hbonds: [
+  [17, 52],   // G O6  ··· C N4
+  [18, 50],   // G N1  ··· C N3
+  [20, 49]    // G N2  ··· C O2
+]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 5. dCMP and dGMP pair.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Completing the double strand&lt;/h2&gt;
+&lt;p&gt;Therefore, we deduce that the sequence of deoxynucleotides in one strand unfailingly determines the sequence of deoxynucleotides in the other. Hence, the two strands are said to be complementary. Below, for clarity, one of the DNA strands is shown with the nitrogenous bases colored as above, so that you can read the sequence of deoxynucleotides.&lt;/p&gt;
+&lt;div id="mol6" style="width:100%; max-width:700px; height:700px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol6", "/images/molecules/acgtggatca-ss-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "CYT", color: "#FF6933"},
+  {group: "GUA", color: "#0000FF"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 90, zoom: 1.1});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 5. Single strand of DNA (ssDNA)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now we add the other strand, and we get the DNA double helix: the complete staircase, with two rails and rungs each made up of two pieces.&lt;/p&gt;
+&lt;div id="mol7" style="width:100%; max-width:700px; height:700px; position:relative; margin:2rem auto;"&gt;&lt;/div&gt;
+&lt;script&gt;
+showMolecule("mol7", "/images/molecules/acgtggatca-ds-h.pdb", [
+  {group: "PHO", color: "yellow"},
+  {group: "SUG", color: "#87AF50"},
+  {group: "ADE", color: "#00bfff"},
+  {group: "CYT", color: "#FF6933"},
+  {group: "GUA", color: "#0000FF"},
+  {group: "THY", color: "#CC3333"}
+], {rotateX: 90, zoom: 1, hbonds: [[18, 622], [17, 624], [50, 591], [48, 592], [47, 594], [80, 561], [81, 559], [83, 558], [111, 530], [113, 529], [145, 499], [146, 497], [148, 496], [178, 469], [179, 467], [181, 466], [212, 435], [211, 437], [241, 406], [243, 405], [275, 372], [273, 373], [272, 375], [306, 337], [305, 339]]});
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 6. Double strand of DNA (dsDNA)&lt;/strong&gt;&lt;/p&gt;</content><category term="articles"/></entry><entry><title>La estructura del ADN explicada visualmente: nucleótidos y doble hélice</title><link href="https://prado-cabrero.com/la-estructura-del-adn-explicada-de-una-forma-diferente/" rel="alternate"/><published>2025-05-20T10:00:00+01:00</published><updated>2025-05-20T10:00:00+01:00</updated><author><name>Alfonso Prado-Cabrero, PhD</name></author><id>tag:prado-cabrero.com,2025-05-20:/la-estructura-del-adn-explicada-de-una-forma-diferente/</id><summary type="html">&lt;p&gt;Read this post in &lt;a href="/a-different-way-to-explain-the-structure-of-dna/"&gt;English&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Introduccion&lt;/h2&gt;
 &lt;p&gt;El ADN está compuesto de desoxirribonucleótidos. Estas moléculas con un nombre tan complicado son los ladrillos del ADN, y comprender su forma y como se unen entre ellos es la puerta de entrada a la genetica. En contraste con las explicaciones clásicas, creo que …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Read this post in &lt;a href="/a-different-way-to-explain-the-structure-of-dna/"&gt;English&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Introduccion&lt;/h2&gt;
